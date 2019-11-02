@@ -1,0 +1,29 @@
+{
+  "name": "hub",
+  "version": "1.0.0",
+  "description": "hub",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GideonMax/hub.git"
+  },
+  "author": "gidi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GideonMax/hub/issues"
+  },
+  "homepage": "https://github.com/GideonMax/hub#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "exceljs": "^1.9.1",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.7.0",
+    "fs": "0.0.1-security",
+    "nodemailer": "^6.1.1",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <header id="indexHeader">
+
+    </header>
+    <main class="addCats">
+      <div  id="addCat" <% if (error == "add") {%> style="display: block;" <% }%> class="popup">
+        <header>
+          <span>
+            הוספת קטגוריה <a onclick='document.getElementById("addCat").style.display = "none"'>X</a>
+          </span>
+        </header>
+        <main>
+          <form class="addCatsForm" action="doAddCat" method="post">
+            <section id="input">
+                <input type="text" name="catName" placeholder="שם הקטגוריה">
+                <% if (msg == "null") { %>
+                <span class="error">
+                  שם הקטגוריה לא יכול להיות ריק.
+                </span>
+                <% } if (msg == "nocats") { %>
+                  <span class="error">
+                    בשביל להוסיף פריטים, תחילה צרו קטגוריה חדשה.
+                  </span>
+                <% } %>
+            </section>
+            <section id="buttons">
+              <input type="button" value="ביטול" onclick='document.getElementById("addCat").style.display = "none"'>
+              <input type="submit" name="submit" value="הוספה">
+            </section>
+          </form>
+        </main>
+      </div>
+    </main>
+
+    <main class="editCat">
+      <div id="editCat" <% if (error == "edit") {%> style="display: block;" <% }%> class="popup">
+        <header>
+          <span>
+            עריכת קטגוריה <a onclick='document.getElementById("editCat").style.display = "none"'>X</a>
+          </span>
+        </header>
+        <main>
+          <form class="editCatForm" action="doEditCat" method="post">
+            <section id="input">
+                <input type="text" id='catName' name="catName" placeholder="שם הקטגוריה">
+                <% if (error == "edit") {%>
+                  <input type="hidden" id="oldCat" name="oldCat" value="<%= oldCat %>">
+                 <% } else { %>
+                   <input type="hidden" id="oldCat" name="oldCat" value="">
+                 <% } %>
+                <% if (error == "edit") { %>
+                <span class="error">
+                  שם הקטגוריה לא יכול להיות ריק.
+                </span>
+                <% } %>
+            </section>
+            <section id="buttons">
+              <input type="submit" value="מחיקה" name="submit">
+              <input type="submit" name="submit" value="עריכה">
+            </section>
+          </form>
+        </main>
+      </div>
+    </main>
+
+    <main>
+      <div class="note">
+        לחיצה על הפריט תוביל לעריכת הפריט
+        <a onclick='document.getElementById("addCat").style.display = "block";' class="button" id="addCat"><span class="plusIcon">+</span> הוספת קטגוריה</a>
+      </div>
+      <section class="cats" id="cats">
+
+      </section>
+    </main>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" type="text/javascript"></script>
+  </body>
+</html>

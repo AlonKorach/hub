@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../style.css">
+    <title></title>
+  </head>
+  <body>
+    <main class="addCats">
+      <div class="popup">
+        <header>
+          <span>
+            הוספת קטגוריה
+          </span>
+        </header>
+        <main>
+          <form class="addCatsForm" action="doAddCat" method="post">
+            <section id="input">
+                <input type="text" name="cat" placeholder="שם הקטגוריה">
+            </section>
+            <section id="buttons">
+              <input type="button" value="ביטול" onclick="cancel()">
+              <input type="submit" name="submit" value="הוספה">
+            </section>
+          </form>
+        </main>
+      </div>
+    </main>
+  </body>
+</html>

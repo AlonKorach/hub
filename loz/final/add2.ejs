@@ -1,0 +1,915 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+    .modbut{   width:42%;
+       height:27px;
+        background-color:lightgrey;
+          font-family:ariel;
+             font-size:16px;
+             padding-top:8px;
+               text-align:center;
+                 /* padding:7px;*/
+                    transition: background 0.1s ease-in-out;
+                 }
+    .modbut:hover{
+          background-color:grey;
+          }
+	/* The Modal (background) */
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+	  position: relative;
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 0;
+	  border: 1px solid #888;
+	  width: 80%;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	  -webkit-animation-name: animatetop;
+	  -webkit-animation-duration: 0.4s;
+	  animation-name: animatetop;
+	  animation-duration: 0.4s
+	}
+
+	/* Add Animation */
+	@-webkit-keyframes animatetop {
+	  from {top:-300px; opacity:0}
+	  to {top:0; opacity:1}
+	}
+
+	@keyframes animatetop {
+	  from {top:-300px; opacity:0}
+	  to {top:0; opacity:1}
+	}
+
+	/* The Close Button */
+	.close {
+	  color: grey;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	.modal-header {
+	  padding: 2px 16px;
+	}
+
+	.modal-body {padding: 2px 16px;}
+
+	.modal-footer {
+	  padding: 2px 16px;
+	}
+	button.button
+	{
+		background-color:lightgrey;
+		outline:none;
+		border:none;
+		width:100%;
+		font-size:15px;
+		padding:10px;
+		-webkit-transition:background-color 0.3s;
+	}
+	button.button:hover
+	{
+		background-color:grey;
+	}
+
+    body {
+        overflow-x: hidden;
+    }
+    #table td, th {
+        direction: rtl;
+        width: 11.1111111111%;
+        height: 11.1111111111vh;
+        background: white;
+        border-left-width: 1px;
+        border-bottom-width: 1px;
+        border-right-width: 0;
+        border-top-width: 0;
+        border-style: solid;
+        border-color: lightgrey;
+    }
+    button
+    {
+        background-color:lightgrey;
+        font-size:30px;
+        border:none;
+        outline:none;
+    }</style>
+</head>
+<body>
+<form action="" method="POST" name="goto">
+day
+<select id="day" name="day">
+<option value="1">
+<option id="gd1"value="1">
+        1
+        </option>
+        <option id="gd2" value="2">
+        2
+        </option>
+        <option id="gd3" value="3">
+        3
+        </option>
+        <option id="gd4" value="4">
+        4
+        </option>
+        <option id="gd5" value="5">
+        5
+        </option>
+        <option id="gd6" value="6">
+        6
+
+        <option id="gd7" value="7">
+        7
+        </option>
+        <option id="gd8" value="8">
+        8
+        </option>
+        <option id="gd9" value="9">
+        9
+        </option>
+        <option id="gd10" value="10">
+        10
+        </option>
+        <option id="gd11" value="11">
+        11
+        </option>
+        <option id="gd12"value="12">
+        12
+        </option>
+        <option id="gd13"value="13">
+        13
+        </option>
+        <option id="gd14"value="14">
+        14
+        </option>
+        <option id="gd15"value="15">
+        15
+        </option>
+        <option id="gd16"value="16">
+        16
+
+        <option id="gd17"value="17">
+        17
+        </option>
+        <option id="gd18"value="18">
+        18
+        </option>
+        <option id="gd19"value="19">
+        19
+        </option>
+        <option id="gd20"value="20">
+        20
+        </option>
+        <option id="gd21"value="21">
+        21
+        </option>
+        <option id="gd22"value="22">
+        22
+        </option>
+        <option id="gd23"value="23">
+        23
+        </option>
+        <option id="gd24" value="24">
+        24
+        </option>
+        <option id="gd25" value="25">
+        25
+        </option>
+        <option id="gd26" value="26">
+        26
+
+        <option id="gd27"value="27">
+        27
+        </option>
+        <option id="gd28"value="28">
+        28
+        </option>
+        <option id="gd29"value="29">
+        29
+        </option>
+        <option id="gd30"value="30">
+        30
+        </option>
+        <option id="gd31"value="31">
+        31
+        </option>
+        </select>
+month <select id="month" name="month"> <option id="gm1" value="1">
+1
+</option>
+<option id="gm2"value="2">
+2
+</option>
+<option id="gm3"value="3">
+3
+</option>
+<option id="gm4"value="4">
+4
+</option>
+<option id="gm5"value="5">
+5
+</option>
+<option id="gm6"value="6">
+6
+
+<option id="gm7"value="7">
+7
+</option>
+<option id="gm8"value="8">
+8
+</option>
+<option id="gm9"value="9">
+9
+</option>
+<option id="gm10"value="10">
+10
+</option>
+<option id="gm11"value="11">
+11
+</option>
+<option id="gm12"value="12">
+12
+</option>
+</select>
+
+
+
+year
+
+ <input name="year" id="gyear"/>
+
+
+
+<input type="submit" name="goto" value="goto">
+</form>
+<div id="data" ><%=data%></div>
+<div id="keys" ><%=keys%></div>
+<table id="table" border="0" cellspacing="0" cellpadding="0" style="width:100%;height:100vh;">
+    <tr id="5">
+        <th style="border-left-width:0;">אולם ראשון</th>
+        <th>אולם שני</th>
+        <th>אולם שלישי</th>
+        <th>מזכירות</th>
+        <th>פנאי</th>
+        <th>האב</th>
+        <th>סדנא</th>
+        <th>בריכה</th>
+        <th>זמן/אולם</th>
+
+    </tr>
+    <tr id="r1700">
+        <td style="border-left-width:0;" id="1olam1700" onclick="openmodal(this.id)"> </td>
+        <td id="2olam1700" onclick="openmodal(this.id)"> </td>
+        <td id="3olam1700" onclick="openmodal(this.id)"> </td>
+        <td id="maz1700" onclick="openmodal(this.id)"> </td>
+        <td id="pnay1700" onclick="openmodal(this.id)"> </td>
+        <td id="hub1700" onclick="openmodal(this.id)"> </td>
+        <td id="sadna1700" onclick="openmodal(this.id)"> </td>
+        <td onclick="getid()" id="pool1700" onclick="openmodal(this.id)"> </td>
+        <td id="1700">17:00 </td>
+
+    </tr>
+    <tr id="r1730">
+        <td style="border-left-width:0;" id="1olam1730" onclick="openmodal(this.id)"> </td>
+        <td id="2olam1730" onclick="openmodal(this.id)"> </td>
+        <td id="3olam1730" onclick="openmodal(this.id)"> </td>
+        <td id="maz1730" onclick="openmodal(this.id)"> </td>
+        <td id="pnay1730" onclick="openmodal(this.id)"> </td>
+        <td id="hub1730" onclick="openmodal(this.id)"> </td>
+        <td id="sadna1730" onclick="openmodal(this.id)"> </td>
+        <td id="pool1730" onclick="openmodal(this.id)"> </td>
+        <td id="1730">17:30 </td>
+
+    </tr>
+    <tr id="r1800">
+        <td style="border-left-width:0;" id="1olam1800" onclick="openmodal(this.id)"> </td>
+        <td id="2olam1800" onclick="openmodal(this.id)"> </td>
+        <td id="3olam1800" onclick="openmodal(this.id)"> </td>
+        <td id="maz1800" onclick="openmodal(this.id)"> </td>
+        <td id="pnay1800" onclick="openmodal(this.id)"> </td>
+        <td id="hub1800" onclick="openmodal(this.id)"> </td>
+        <td id="sadna1800" onclick="openmodal(this.id)"> </td>
+        <td id="pool1800" onclick="openmodal(this.id)"> </td>
+        <td id="1800"> 18:00</td>
+    </tr>
+    <tr id="r1830">
+        <td style="border-left-width:0;" id="1olam1830" onclick="openmodal(this.id)"> </td>
+        <td id="2olam1830" onclick="openmodal(this.id)"> </td>
+        <td id="3olam1830" onclick="openmodal(this.id)"> </td>
+        <td id="maz1830" onclick="openmodal(this.id)"> </td>
+        <td id="pnay1830" onclick="openmodal(this.id)"> </td>
+        <td id="hub1830" onclick="openmodal(this.id)"> </td>
+        <td id="sadna1830" onclick="openmodal(this.id)"> </td>
+        <td id="pool1830" onclick="openmodal(this.id)"> </td>
+        <td id="1830"> 18:30</td>
+    </tr>
+    <tr id="r1900">
+        <td style="border-left-width:0;" id="1olam1900" onclick="openmodal(this.id)"> </td>
+        <td id="2olam1900" onclick="openmodal(this.id)"> </td>
+        <td id="3olam1900" onclick="openmodal(this.id)"> </td>
+        <td id="maz1900" onclick="openmodal(this.id)"> </td>
+        <td id="pnay1900" onclick="openmodal(this.id)"> </td>
+        <td id="hub1900" onclick="openmodal(this.id)"> </td>
+        <td id="sadna1900" onclick="openmodal(this.id)"> </td>
+        <td id="pool1900" onclick="openmodal(this.id)"> </td>
+        <td id="1900"> 19:00</td>
+    </tr>
+    <tr id="r1930">
+        <td style="border-left-width:0;" id="1olam1930" onclick="openmodal(this.id)"> </td>
+        <td id="2olam1930" onclick="openmodal(this.id)"> </td>
+        <td id="3olam1930" onclick="openmodal(this.id)"> </td>
+        <td id="maz1930" onclick="openmodal(this.id)"> </td>
+        <td id="pnay1930" onclick="openmodal(this.id)"> </td>
+        <td id="hub1930" onclick="openmodal(this.id)"> </td>
+        <td id="sadna1930" onclick="openmodal(this.id)"> </td>
+        <td id="pool1930" onclick="openmodal(this.id)"> </td>
+        <td id="1930"> 19:30</td>
+    </tr>
+    <tr id="r2000">
+        <td style="border-left-width:0;" id="1olam2000" onclick="openmodal(this.id)"> </td>
+        <td id="2olam2000" onclick="openmodal(this.id)"> </td>
+        <td id="3olam2000" onclick="openmodal(this.id)"> </td>
+        <td id="maz2000" onclick="openmodal(this.id)"> </td>
+        <td id="pnay000" onclick="openmodal(this.id)"> </td>
+        <td id="hub2000" onclick="openmodal(this.id)"> </td>
+        <td id="sadna2000" onclick="openmodal(this.id)"> </td>
+        <td id="pool2000" onclick="openmodal(this.id)"> </td>
+        <td id="2000"> 20:00</td>
+    </tr>
+    <tr  id="r2030">
+        <td id="1olam2030" style="border-bottom-width:0;border-left-width:0;" onclick="openmodal(this.id)"> </td>
+        <td id="2olam2030" style="border-bottom-width:0;" onclick="openmodal(this.id)"> </td>
+        <td id="3olam2030" style="border-bottom-width:0;" onclick="openmodal(this.id)"> </td>
+        <td id="maz2030" style="border-bottom-width:0;" onclick="openmodal(this.id)"> </td>
+        <td id="pnay2030" style="border-bottom-width:0;" onclick="openmodal(this.id)"> </td>
+        <td id="hub2030" style="border-bottom-width:0;" onclick="openmodal(this.id)"> </td>
+        <td id="sadna2030" style="border-bottom-width:0;" onclick="openmodal(this.id)"> </td>
+        <td id="pool2030" style="border-bottom-width:0;" onclick="openmodal(this.id)"> </td>
+        <td id="2030" style="border-bottom-width:0;">20:30</td>
+    </tr>
+</table>
+
+</body>
+</html>
+<script>
+/*var time=1700;
+for(j=0;j<7;j++){
+for(i=1;i<=15;i+=2){
+document.getElementById("r"+time).childNodes[i].innerHTML= "lol";
+
+}
+if (time % 100 == 0) {
+                time =time+30;
+            }
+else {
+                time =time+70;
+            }
+    console.log(time)    }
+    */
+
+
+    function openmodal(id) {
+    if(document.getElementById(id).innerHTML!=""){
+
+    }
+    modelOpen(id);}
+    /* var id=id;
+        window.alert(id + " " + document.getElementById(id).innerHTML);
+        var hours = window.prompt("half hours");
+        var des = window.prompt("description");
+        var tstart=id.match(/\d/g);
+        tstart=tstart.join("");
+        document.getElementById("tstart").value=tstart;
+        document.getElementById("place").value=id.replace(tstart,"");
+var tend =tstart;
+for (i=0;i<hours;i++){
+    if (tend % 100 == 0) {
+                tend =tend+30;
+            }
+else {
+                tend =tend+70;
+            }
+}
+        document.getElementById("tend").value=tend;
+        document.getElementById("des").value=des;
+        var date=""+document.getElementById("day").value+"-"+document.getElementById("month").value+"-"+document.getElementById("year").value;
+        document.getElementById("date").value=date;
+        document.getElementById("data").submit();
+    }
+
+
+    var keys=JSON.parse(document.getElementById("keys").innerHTML);
+    var data=JSON.parse(document.getElementById("data").innerHTML);
+    var data1=Object.values(data);
+    var data2;
+    if(data!=null){}
+    for (i=0;i<keys.length;i++)
+    {
+    data2=JSON.parse(data1[i]);
+
+    document.getElementById("data").remove();
+    document.getElementById("keys").remove();
+    resetcol(data2.tend,data2.tstart,data2.place,data2.col,data2.des)
+    }
+
+    function resetcol(tend, tstart, place, col,des) {
+        var c = 0;
+        tstart = Number(tstart);
+        tend = Number(tend);
+        col = Number(col);
+        while (tstart != tend) {
+            if(c==0)
+            {
+                if (tend % 100 != 0) {
+                    tend =tend- 30;
+                }
+                else {
+                    tend =tend- 70;
+                }
+
+            }if (tstart==tend){
+        document.getElementById(place + tstart).innerHTML=des;
+        tstart=tend;
+    }
+    else{
+             c++;
+            //    document.getElementById(place + tend).style.columnSpan = "0";
+            // var placeend = document.getElementById(place + tend);
+            // var test = document.getElementById("5");
+            //  var parent = document.getElementById("table");
+            // parent.removeChild(test);
+            //   $("#" + place + tend).remove();
+            var row = document.getElementById(place + tend);
+            row.remove();
+
+            console.log(place + tend);
+            if (tend % 100 != 0) {
+                tend -= 30;
+            }
+            else {
+                tend -= 70
+            }
+        }
+        document.getElementById(place + tstart).rowSpan = c+1;
+        document.getElementById(place + tstart).innerHTML=des;
+    }}
+    */
+</script>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <form name="form3" id="form1" method="POST">
+  <div class="modal-content" dir="rtl">
+    <div class="modal-header">
+      <h2>פעילות חדשה:</h2>
+      <p>   שם פעילות:<input name="name" id="n"/></p>
+      <p> שם מדריך:<input name="co" id="c" /></p>
+      <input id="isdate" type="radio" onclick="typeoof()" name="isnormal" value="false" checked> חד פעמי <br>
+      <input id="isnormal" type="radio" onclick="typeoof()" name="isnormal" value="true"> קבוע
+      <p style="display:none;" id="normal">
+      יום
+<br/>
+
+<select id="days" name="normal">
+
+<option value="0">
+יום ראשון
+</option>
+<option value="1">
+יום שני
+</option>
+<option value="2">
+יום שלישי
+</option>
+<option value="3">
+יום רביעי
+</option>
+<option value="4">
+יום חמישי
+</option>
+
+</select>
+</p>
+
+
+      <p id="date"> תאריך <br/>
+        day
+        <select id="day" name="day">
+        <option id="d1"value="1">
+        1
+        </option>
+        <option id="d2" value="2">
+        2
+        </option>
+        <option id="d3" value="3">
+        3
+        </option>
+        <option id="d4" value="4">
+        4
+        </option>
+        <option id="d5" value="5">
+        5
+        </option>
+        <option id="d6" value="6">
+        6
+
+        <option id="d7" value="7">
+        7
+        </option>
+        <option id="d8" value="8">
+        8
+        </option>
+        <option id="d9" value="9">
+        9
+        </option>
+        <option id="d10" value="10">
+        10
+        </option>
+        <option id="d11" value="11">
+        11
+        </option>
+        <option id="d12"value="12">
+        12
+        </option>
+        <option id="d13"value="13">
+        13
+        </option>
+        <option id="d14"value="14">
+        14
+        </option>
+        <option id="d15"value="15">
+        15
+        </option>
+        <option id="d16"value="16">
+        16
+
+        <option id="d17"value="17">
+        17
+        </option>
+        <option id="d18"value="18">
+        18
+        </option>
+        <option id="d19"value="19">
+        19
+        </option>
+        <option id="d20"value="20">
+        20
+        </option>
+        <option id="d21"value="21">
+        21
+        </option>
+        <option id="d22"value="22">
+        22
+        </option>
+        <option id="d23"value="23">
+        23
+        </option>
+        <option id="d24" value="24">
+        24
+        </option>
+        <option id="d25" value="25">
+        25
+        </option>
+        <option id="d26" value="26">
+        26
+
+        <option id="d27"value="27">
+        27
+        </option>
+        <option id="d28"value="28">
+        28
+        </option>
+        <option id="d29"value="29">
+        29
+        </option>
+        <option id="d30"value="30">
+        30
+        </option>
+        <option id="d31"value="31">
+        31
+        </option>
+        </select>
+        month <select id="month" name="month">
+        <option id="m1" value="1">
+        1
+        </option>
+        <option id="m2"value="2">
+        2
+        </option>
+        <option id="m3"value="3">
+        3
+        </option>
+        <option id="m4"value="4">
+        4
+        </option>
+        <option id="m5"value="5">
+        5
+        </option>
+        <option id="m6"value="6">
+        6
+
+        <option id="m7"value="7">
+        7
+        </option>
+        <option id="m8"value="8">
+        8
+        </option>
+        <option id="m9"value="9">
+        9
+        </option>
+        <option id="m10"value="10">
+        10
+        </option>
+        <option id="m11"value="11">
+        11
+        </option>
+        <option id="m12"value="12">
+        12
+        </option>
+        </select>
+
+
+
+
+        year <input name="year" id="year"> </p>
+      </p>
+    <p> מקום</p>
+    <select name="place">
+    <option id="1olam" value="1olam">אולם 1</option>
+    <option id="2olam" value="2olam">אולם 2</option>
+    <option id="3olam" value="3olam">אולם 3</option>
+    <option id="maz" value="maz">מזכירות</option>
+    <option id="pnay" value="pnay">פנאי</option>
+    <option id="hub" value="hub">האב</option>
+    <option id="sadna" value="sadna">סדנא</option>
+    <option id="pool" value="pool">בריכה</option>
+
+</select>
+    <div class="modal-body">
+    <p> start hour   </p>
+           <select name="tstart">    <option id="s1700" value="1700">
+    17:00
+
+</option>
+
+<option id="s1730" value="1730">
+    17:30
+
+</option>
+
+<option id="s1800" value="1800">
+    18:00
+
+</option>
+<option id="s1830" value="1830">
+    18:30
+
+</option>
+<option id="s1900" value="1900">
+    19:00
+
+</option>
+<option id="s1930" value="1930">
+    19:30
+
+</option>
+<option id="s2000" value="2000">
+    20:00
+
+</option>
+<option id="s2030" value="2030">
+    20:30
+
+</option>
+</select>
+</p>
+
+
+    <p id="modal-content">enter ending hour </p>
+
+
+
+
+      <select name="tend">
+
+      <option value="1730">
+      17:30
+
+  </option>
+
+  <option value="1800">
+      18:00
+
+  </option>
+  <option value="1830">
+      18:30
+
+  </option>
+  <option value="1900">
+      19:00
+
+  </option>
+  <option value="1930">
+      19:30
+
+  </option>
+  <option value="2000">
+      20:00
+
+  </option>
+  <option value="2030">
+      20:30
+
+  </option>
+  <option value="2100" selected>
+      21:00
+
+  </option>
+      </select>
+
+<br/>
+
+<div id="color" style="display:none;">
+צבע
+<select name="clr">
+
+<option id="clrnrm" value="ffff00">
+רגיל
+</option>
+</select>
+</div>
+
+
+    </div>
+    <div class="modal-footer">
+      <h3>
+      	<table style="width:100%;" cellspacing="10"></form>
+            <tr>
+        <div>    <div style="float:right;" onclick="ishur()" class="modbut"> אישור</div>
+            <div style="float:left;" onclick="bitul()" class="modbut">ביטול </div>
+       </div></tr>
+        </table>
+      </h3>
+    </div>
+  </div>
+
+</div>
+<script>
+typeoof(){
+    if(document.getElementById("isnormal").selected=true;){
+    document.getElementById("days").display="block";
+    document.getElementById("dates").display="none";
+    }
+    else{
+        document.getElementById("dates").display="block";
+    document.getElementById("days").display="none";
+    }
+}
+</script>
+<script>
+var day=<%=day%>;
+var month=<%=month%>;
+var year=<%=year%>;
+document.getElementById("gd"+day).selected=true;
+document.getElementById("gm"+month).selected=true;
+document.getElementById("gyear").value=year;
+function ishur()
+{
+document.getElementById("form1").submit();
+}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+function bitul(){
+    modal.style.display = "none";
+}
+// When the user clicks the button, open the modal
+function modelOpen(id)
+{
+    var changedid=id;
+    for(i='1';i<='3';i++){
+
+
+if(id.charAt(0)==i){
+    changedid=id.replace(i,"")
+}
+ }   var tstart=changedid.match(/\d/g);
+    tstart=tstart.join("");
+    console.log(tstart);
+    document.getElementById("s"+tstart).selected =true;
+    var place=id.replace(tstart,"");
+    console.log(place);
+    document.getElementById(place).selected=true;
+   document.getElementById("d"+(document.getElementById("day").value)).selected=true;
+   document.getElementById("m"+(document.getElementById("month").value)).selected=true;
+    document.getElementById("year").value= document.getElementById("gyear").value;
+   modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+if(document.getElementById("data").innerHTML!=""){
+var keys=JSON.parse(document.getElementById("keys").innerHTML);
+var data=JSON.parse(document.getElementById("data").innerHTML);
+var data1=Object.values(data);
+var data2="";
+for (i=0;i<keys.length;i++)
+{
+data2=JSON.parse(data1[i]);
+
+document.getElementById("data").remove();
+document.getElementById("keys").remove();
+
+
+resetcol(data2.tend,data2.tstart,data2.place,data2.col,data2.name,data2.co,data2.clr)
+}
+
+resetcol(data2.tend,data2.tstart,data2.place,data2.col,data2.name,data2.co,data2.clr)
+}
+
+{name:"name",clr:"ffffff"}
+
+function resetcol(tend, tstart, place, col,name,co,clr) {
+    var c = 0;
+    tstart = Number(tstart);
+    tend = Number(tend);
+    col = Number(col);
+    while (tstart != tend) {
+        if(c==0)
+        {
+            if (tend % 100 != 0) {
+                tend =tend- 30;
+            }
+            else {
+                tend =tend- 70;
+            }
+
+        }if (tstart==tend){
+            document.getElementById(place + tstart).innerHTML="שם:"+name+"<br/>"+"שם מדריך"+co;
+            document.getElementById(place + tstart).style.backgroundColor=clr;
+    tstart=tend;
+}
+else{
+         c++;
+        //    document.getElementById(place + tend).style.columnSpan = "0";
+        // var placeend = document.getElementById(place + tend);
+        // var test = document.getElementById("5");
+        //  var parent = document.getElementById("table");
+        // parent.removeChild(test);
+        //   $("#" + place + tend).remove();
+        var row = document.getElementById(place + tend);
+        console.log(place+tend);
+        row.remove();
+
+        console.log(place + tend);
+        if (tend % 100 != 0) {
+            tend -= 30;
+        }
+        else {
+            tend -= 70
+        }
+    }
+    document.getElementById(place + tstart).rowSpan = c+1;
+    document.getElementById(place + tstart).innerHTML="שם:"+name+"<br/>"+"שם מדריך"+co;
+    document.getElementById(place + tstart).style.backgroundColor=clr;
+}}
+</script>

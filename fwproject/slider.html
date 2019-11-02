@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<style>
+#slider {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: inline-block;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  justify-content: space-between;
+}
+.container {
+  position: relative;
+  margin-bottom: 0px;
+  color: #111111;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: verdana;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  border-radius: 40px;
+  padding: 15px;
+
+}
+.container input:checked ~ .checkmark {
+  background-color: orange;
+  color:white;
+  animation: pulse 0.5s 1, animateleft 0.4s;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(157,85,27,0.5);
+  }
+  100%{
+    box-shadow: 0px 0px 0px 10px rgba(227,146,2,0);
+
+  }
+}
+@keyframes animateleft{
+  from{
+    opacity:0;
+    }
+    to{
+      opacity:1;
+    }
+    }
+</style>
+<body>
+<div id="slider">
+<label class="container">
+  <input type="radio" name="radio">
+  <span class="checkmark">Thursday</span>
+</label>
+<label class="container">
+  <input type="radio" name="radio">
+  <span class="checkmark">Wednesday</span>
+</label>
+<label class="container">
+  <input type="radio" name="radio">
+  <span class="checkmark">Tuesday</span>
+</label>
+<label class="container">
+  <input type="radio" name="radio">
+  <span class="checkmark">Monday</span>
+</label>
+<label class="container">
+  <input type="radio" name="radio">
+  <span class="checkmark">Sunday</span>
+</label>
+</div>
+</body>
+</html>

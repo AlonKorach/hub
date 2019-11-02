@@ -1,0 +1,653 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        html
+        {
+            /*THE FONT*/
+            font-family: 'segoe ui';
+        }
+        
+        .menu
+        {
+            margin:0%;
+            width:100%;
+            background-color: #eeeeee;
+            height:3.5em;
+        }
+        .day
+        {
+            color:#fe9600;
+            font-size:24pt;
+            font-weight:200;
+            float:right;
+        }
+        .date
+        {
+            color:black;
+            font-size:20pt;
+            float:right;
+        }
+
+
+        .menuButton
+        {
+            height:100%;
+            width:4.25em;
+            float:left;
+            position: relative;
+        }
+
+        body 
+        {
+            overflow: hidden;
+        }
+
+
+
+
+
+        /*main table visualy only*/
+        .table td {
+            direction: rtl;
+            width: 11.875%;
+            height: 8.5vh;
+            background: white;
+            border-left-width: 1px;
+            border-bottom-width: 1px;
+            border-right-width: 0;
+            border-top-width: 0;
+            border-style: solid;
+            border-color: lightgrey;
+        }
+        /*second invisable table for the data */
+        .table2 td {
+            direction: rtl;
+            width: 11.875%;
+            height: 8.5vh;
+            background:rgba(0,0,0,0);
+            border-left-width: 1px;
+            border-bottom-width: 1px;
+            border-right-width: 0;
+            border-top-width: 0;
+            border-style: solid;
+            border-color: rgba(0,0,0,0);
+        }
+        @media screen and (max-height:500px)
+        {
+            
+            .table td {
+                height: 20vh;
+            }
+            .table2 td {
+                height: 20vh;
+            }
+        }
+        /*for the main table the titles of the places*/
+        .th
+        {
+            height:2vh!important;
+            padding-right:0.55%;       
+            padding-top: 0.5%!important;
+            padding-bottom:2.5%;            
+            text-align: right;
+            
+        }
+        /*for the time in the main table*/
+        td.time
+        {
+            text-align:center;
+            vertical-align: top;
+            width:5%!important;
+            padding:0%!important;
+        }
+        /*the time line which tells the time*/
+        .timeL
+        {
+            border-bottom-color:black;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            position:absolute;
+            top:0%;
+            width:100%;
+            height:2px;
+            left:0%;
+            z-index:10;
+        }
+        /*the content divs */
+        div.content 
+        {
+            background-color: #dedede;
+            border-right-width:5px;
+            border-right-style:solid;
+            width: 90%;
+            border-radius: 5px;
+            height: 90%;
+        }
+        /*the main table*/
+        table.table
+        {
+            width:100%;
+            height:85vh;
+            position:relative;
+        }
+        /*the secondery table*/
+        table.table2
+        {
+            width:100%;
+            height:85vh;
+            position:relative;
+        }
+        /*the spacwe holder for the table*/
+        #spaceHolder div
+        {
+            transition:left 0.4s;
+            width:100%;
+        }
+        /*the class for the tds on the left */
+        td.left
+        {
+            border-left-width:0;
+        }
+        /*the class for the tds on the buttom */
+        td.bottom
+        {
+            border-bottom-width:0;
+        }
+        
+        /*the previus day*/
+        div.prev
+        {
+            left:-100%;
+            visibility:visible!important;
+        }
+        /*the current day*/
+        div.prev + div
+        {
+            left:0%;
+            visibility:visible!important;
+        }
+        /*the next day*/
+        div.prev + div + div
+        {
+            left:100%;
+            visibility:visible!important;
+        }
+    </style>
+</head>
+<body style="margin:0;">
+   
+    <nav class="menu">
+        <div class="menuButton" onclick="left()">
+            <div style="width:100%;height:100%;opacity:0%;position:absolute;"></div>
+            <label>
+                <center>
+                    <object data="next.svg" style="width:50%;"></object>
+                </center>
+                <span style="display:block;text-align:center;">הקודם</span>
+            </label>
+        </div>
+        <div class="menuButton" onclick="right()">
+            <div style="width:100%;height:100%;opacity:0%;position:absolute;"></div>
+            <label>
+                <center>
+                    <object data="back.svg" style="width:50%;"></object>
+                </center>
+                <span style="display:block;text-align:center;">הבא</span>
+            </label>
+        </div>
+        <div class="menuButton" onclick="today();">
+            <div style="width:100%;height:100%;opacity:0%;position:absolute;"></div>
+            <label>
+                <center>
+                    <object data="calender.svg" style="width:50%;"></object>
+                </center>
+                <span style="display:block;text-align:center;">היום</span>
+            </label>
+        </div>
+
+        <div>
+            <span class="day" id="dateDay">
+                the day
+            </span>
+            <span class="date" id="date">
+                13.24.24
+            </span>
+        </div>
+    </nav>
+    <!--כאן התוכן אתה יכול להוסיף כמה שתרצה כל אחד עם פוסישן של 100 אחוז יותר מהקודם-->
+    <!--שים לב לשים לכולם אי די עם מספרים עוקבים-->
+    <div style="position:absolute;width:100%;left:0%;">
+        <!--time line:-->
+        <div class="timeL"></div>
+        <table border="0" cellspacing="0" cellpadding="0" class="table" style="z-index: -1;">
+
+            <tr>
+                <td class="th left">אולם ראשון</td>
+                <td class="th">אולם שני</td>
+                <td class="th">אולם שלישי</td>
+                <td class="th">מזכירות</td>
+                <td class="th">פנאי</td>
+                <td class="th">האב</td>
+                <td class="th">סדנא</td>
+                <td class="th">בריכה</td>
+                <td class="time th"></td>
+
+            </tr>
+            <tr>
+                <td class="left"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="time"rowspan="2"><br/><span>17:00 </span></td>
+
+            </tr>
+            <tr>
+                <td class="left"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="time"></td>
+            </tr>
+            <tr>
+                <td class="left"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="time" rowspan="2"><br/><span> 18:00</span></td>
+            </tr>
+            <tr>
+                <td class="left">  </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="time"></td>
+            </tr>
+            <tr>
+                <td class="left"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="time" rowspan="2"><br/><span> 19:00</span></td>
+            </tr>
+            <tr>
+                <td class="left"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="time"></td>
+            </tr>
+            <tr>
+                <td class="left">  </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="time bottom" rowspan="2"><br/><span> 20:00</span></td>
+            </tr>
+            <tr>
+                <td class="left bottom"></td>
+                <td class="bottom"></td>
+                <td class="bottom"></td>
+                <td class="bottom"></td>
+                <td class="bottom"></td>
+                <td class="bottom"></td>
+                <td class="bottom"></td>
+                <td class="bottom"></td>
+                
+            </tr>
+        </table>
+    </div>
+        <div id="spaceHolder"><div style="position:absolute;" id="0"></div></div>
+        <script>//constructor
+            var tables = "";
+            var secondId = new Array('5','1700','1730','1800','1830','1900','1930','2000','2030')
+            var thirdId = new Array('1olam','2olam','3olam','maz','pnay','hub','sadna','pool','')
+            var titles = ['אולם ראשון','אולם שני','אולם שלישי','מזכירות','פנאי','האב','סדנא','בריכה',''];
+            var times = ['','17:00','','18:00','','19:00','','20:00',''];
+            for(var i = 1 ; i <= 7; i++)
+            {
+                tables += '<div id="'+i+'" style="position:absolute;width:100%;visibility:hidden" class="cur"> '
+                tables += '<table border="0" cellspacing="0" cellpadding="0" class="table2">'
+                for(var i2 = 0; i2<9 ;i2++)
+                {
+                    tables += '<tr id="' + i + ':' + secondId[i2] + '">'
+                    for(var i3 =0;i3 < 9 ; i3++)
+                    {
+                        tables += '<td '
+                        if(i2 == 0 && i3 == 8)
+                        {
+                            tables += 'class="time th"'
+                        }
+                        else if(i2 ==0)
+                        {
+                            tables += 'class="th" style="opacity:0"'
+                        }
+                        else if(i3 == 8)
+                        {
+                            tables += 'class = "time" style="display:none;"' 
+                        }
+                        else
+                        {
+                            tables += 'id="' + i + ':' + thirdId[i3] + secondId[i2] +'"'
+                        }
+                        tables += '>'
+                        if(i2 == 0)
+                            tables += titles[i3];
+                        if(i3 == 8)
+                            tables += times[i2];
+                        tables += '</td>'
+                    }
+                    tables += '</tr>'
+                }
+                tables += '</table>';
+                tables += '</div>';
+            }
+            console.log(tables);
+            document.getElementById("spaceHolder").innerHTML += tables;
+        </script>
+        
+        <script>
+            function insert(id, color, HTMLtext)
+            {
+                document.getElementById(id).innerHTML = '<div class="content" style="border-right-color:' + color + '" >' + HTMLtext + '</div>'
+            }
+            insert('1:maz1730','green','1')
+            insert('2:maz1730','green','2')
+            insert('3:maz1730','green','3')
+            insert('4:maz1730','green','4')
+            insert('5:maz1730','green','5')
+            insert('6:maz1730','green','6')
+            insert('7:maz1730','green','7')
+            
+            var btn = '<button onclick="randomColor(this.parentElement.parentElement.id)">click</button>';
+            insert('2:maz1800','red','test 1' + btn)
+            insert('2:2olam1800','purple','test 2' + btn)
+            insert('2:1olam1730','blue','test 3' + btn)
+            insert('2:pool1830','black','test 4' + btn)
+            
+            function randomColor(id)
+            {
+                changeColor(id,getRandomColor());
+            }
+
+            function getRandomColor() 
+            {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+
+            //color changing function
+            function changeColor(id,color)
+            {
+                document.getElementById(id).childNodes[0].style.borderRightColor = color;
+            }
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var numofelements = 7;// שים לב לשנות לפי מספר האלמנטים
+    var centerId = 2;
+    
+    document.getElementById(centerId-1).classList.add('prev')
+    function move(a)
+    {
+        document.getElementById(centerId -1+a).classList.remove('prev')
+        document.getElementById(centerId-1).classList.add('prev')
+    }
+    
+
+
+    var date = new Date();
+    function changeDate(centerId,direction)
+    {
+        date = new Date(1000*60*60*24*direction + date.getTime());
+        if(date.getDay() >= 5) //not shishi and shabat
+        {
+            changeDate(centerId,direction);
+        }
+        var day;
+        if(date.getDay() == 0) day ="ראשון";
+        if(date.getDay() == 1) day ="שני";
+        if(date.getDay() == 2) day ="שלישי";
+        if(date.getDay() == 3) day ="רביעי";
+        if(date.getDay() == 4) day ="חמישי";
+        var date_text =  " &nbsp&nbsp&nbsp&nbsp&nbsp" + date.getDate() + "." + (date.getMonth()+1) + "." + date.getFullYear();
+        document.getElementById('date').innerHTML = date_text;
+        document.getElementById('dateDay').innerHTML = 'יום ' + day;
+    }
+
+    changeDate(2,0);
+
+    function right()
+    {
+        if (centerId != numofelements)
+        {
+            centerId++;
+            move(-1);
+            changeDate(centerId,1);
+        }
+        else
+        {
+            //what you want to do if it fails havnt decided yet
+        }
+    }
+
+
+
+
+    function left()
+    {
+        if (centerId != 1)
+        {
+            centerId--;
+            move(1);
+            changeDate(centerId,-1);
+        }
+        else
+        {
+            //what you want to do if it fails havent decided yet
+        }
+    }
+
+    function today()
+    {
+        var lastcid = centerId
+        centerId = 2; 
+
+        document.getElementById(lastcid -1).classList.remove('prev')
+        document.getElementById(centerId-1).classList.add('prev')
+        
+        date = new Date();
+        changeDate(centerId,0);
+    }
+
+
+</script >
+
+
+
+
+<!--time line script-->
+<script>
+    //in minutes
+    var fromTime = 1020
+    var toTime = 1260
+    function update_timeL()
+    {
+        var currentTime = new Date();
+        var currentTime_min_format = currentTime.getHours() * 60 + currentTime.getMinutes();
+        if (currentTime_min_format < fromTime) {
+            changeStyle(document.getElementsByClassName("timeL") ,"11%");
+        }
+        else if (currentTime_min_format > toTime) {
+            changeStyle(document.getElementsByClassName("timeL"),"102%")
+        }
+        else {
+            changeStyle(document.getElementsByClassName("timeL"), ((currentTime_min_format - fromTime) / (toTime - fromTime) * 91 + 11 + "%"));
+            /*
+            if (currentTime_min_format > 1020 && currentTime_min_format < 1050) { document.getElementById("2:1700").style.backgroundColor = "lightgrey" } else { document.getElementById("2:1700").style.backgroundColor = "white" }
+            if (currentTime_min_format > 1050 && currentTime_min_format < 1080) { document.getElementById("2:1730").style.backgroundColor = "lightgrey" } else { document.getElementById("2:1730").style.backgroundColor = "white" }
+            if (currentTime_min_format > 1080 && currentTime_min_format < 1110) { document.getElementById("2:1800").style.backgroundColor = "lightgrey" } else { document.getElementById("2:1800").style.backgroundColor = "white" }
+            if (currentTime_min_format > 1110 && currentTime_min_format < 1140) { document.getElementById("2:1830").style.backgroundColor = "lightgrey" } else { document.getElementById("2:1830").style.backgroundColor = "white" }
+            if (currentTime_min_format > 1140 && currentTime_min_format < 1170) { document.getElementById("2:1900").style.backgroundColor = "lightgrey" } else { document.getElementById("2:1900").style.backgroundColor = "white" }
+            if (currentTime_min_format > 1170 && currentTime_min_format < 1200) { document.getElementById("2:1930").style.backgroundColor = "lightgrey" } else { document.getElementById("2:1930").style.backgroundColor = "white" }
+            if (currentTime_min_format > 1200 && currentTime_min_format < 1230) { document.getElementById("2:2000").style.backgroundColor = "lightgrey" } else { document.getElementById("2:2000").style.backgroundColor = "white" }
+            if (currentTime_min_format > 1230 && currentTime_min_format < 1260) { document.getElementById("2:2030").style.backgroundColor = "lightgrey" } else { document.getElementById("2:2030").style.backgroundColor = "white" }
+            */
+        }
+    }
+
+
+
+    update_timeL();
+    setInterval(function () {
+        update_timeL();
+    }, 1000 * 10 /*every 10 sec updates*/)
+
+
+	
+
+
+
+
+	function changeStyle(element,newstyle)
+	{
+		for(var i = 0;i < element.length;i++)
+		{
+			element[i].style.top = newstyle;
+		}
+	}
+
+
+
+
+
+
+
+</script>
+
+<script>
+//content
+
+//console.log("yes");
+//console.log(getElementById("data").innerHTML);
+//var keys= <%=keys%>;
+//var data = <%=data %>;
+//data=data.replace("&#","")
+var keys=JSON.parse(document.getElementById("keys").innerHTML);
+var data=JSON.parse(document.getElementById("data").innerHTML);
+var data1=Object.values(data);
+var data2;
+for (i=0;i<keys.length;i++)
+{
+data2=JSON.parse(data1[i]);
+
+document.getElementById("data").remove();
+document.getElementById("keys").remove();
+resetcol(data2.tend,data2.tstart,data2.place,data2.col,data2.des)
+}
+
+function resetcol(tend, tstart, place, col,des) {
+    var c = 0;
+    tstart = Number(tstart);
+    tend = Number(tend); 
+    col = Number(col);
+    while (tstart != tend) {
+        if(c==0)
+        {
+            if (tend % 100 != 0) {
+                tend =tend- 30;
+            }
+            else {
+                tend =tend- 70;
+            }
+
+        }if (tstart==tend){
+    document.getElementById(place + tstart).innerHTML=des;
+    tstart=tend;
+}
+else{
+         c++;
+        //    document.getElementById(place + tend).style.columnSpan = "0";
+        // var placeend = document.getElementById(place + tend);
+        // var test = document.getElementById("5");
+        //  var parent = document.getElementById("table");
+        // parent.removeChild(test);
+        //   $("#" + place + tend).remove();
+        var row = document.getElementById(place + tend);
+        row.remove();
+
+        console.log(place + tend);
+        if (tend % 100 != 0) {
+            tend -= 30;
+        }
+        else {
+            tend -= 70
+        }
+    }
+    document.getElementById(place + tstart).rowSpan = c+1;
+    document.getElementById(place + tstart).innerHTML=des;
+}}
+
+
+
+
+
+
+</script>
+
+
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PopUp</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <div class="jumbotron">
+        <h1>We Are open <span class="orange">For Business!</span></h1>
+        <h2 dir="rtl">איזה ברמנים הגיעו היום?</h2>
+        <h3 dir="rtl">אפשר לערוך את הפרטים מיד.</h3>
+    </div>
+    <main>
+      <% if (typeof barman != "Array") { %>
+        <script>
+          "use strict"
+          let interval = window.setInterval(function () {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                let barman = JSON.parse(this.responseText);
+                let days = {
+                  1: "Sunday",
+                  2: "Monday",
+                  3: "Tuesday",
+                  4: "Wednesday",
+                  5: "Thursday",
+                }
+
+                for (let i  = 1; i <= 5; i++) {
+                  barmen(barman, days[i], 1);
+                  barmen(barman, days[i], 2);
+                  shiftmanager(barman, days[i]);
+                }
+
+                clear();
+              }
+            };
+
+            function barmen(barman, day, hour){
+              let days = {
+                Sunday: 1,
+                Monday: 2,
+                Tuesday: 3,
+                Wednesday: 4,
+                Thursday: 5
+              }
+
+              for (let barMan in barman[day][`h${hour}`]) {
+                 if ((barman[day][`h${hour}`][barMan]) == "1") {
+                   // document.getElementById(`day${days[day]}_${hour}`).innerHTML += "<label class='checked'><input type='hidden' value='"+ day +"_1-"+ barMan +">h"+ hour +"' name='" + barMan +"' checked>" + barMan + "</label>"
+                   document.getElementById(`day${days[day]}_${hour}`).innerHTML += "<label class='checked'><input type='hidden' value='"+barMan+"' name='"+barMan+"'><input type='hidden' value='"+ day +"_1' name='" + barMan +"' checked><input type='hidden' value='h" + hour +"' name='"+ barMan +"'>"+ barMan +"</label>"
+
+                 } else {
+                   document.getElementById(`day${days[day]}_${hour}`).innerHTML += "<label class=''><input type='hidden' value='"+barMan+"' name='"+barMan+"'><input type='hidden' value='"+ day +"_0' name='" + barMan +"' checked><input type='hidden' value='h" + hour +"' name='"+ barMan +"'>"+ barMan +"</label>"
+                 }
+                 document.getElementById(`day${days[day]}_${hour}`).addEventListener("click", click);
+              }
+            }
+
+            function click(elem){
+              elem.toElement.classList.toggle("checked");
+              let value = elem.toElement.getElementsByTagName("input").item(1).value;
+              if (value.includes("1")){
+                value = value.replace("1", "");
+                value += "0";
+              } else {
+                value = value.replace("0", "");
+                value += "1";
+              }
+              elem.toElement.getElementsByTagName("input").item(1).value = value;
+            }
+
+            function shiftmanager(barman, day){
+                let days = {
+                  Sunday: 1,
+                  Monday: 2,
+                  Tuesday: 3,
+                  Wednesday: 4,
+                  Thursday: 5
+                }
+
+                for (let barMan in barman[day][`shiftmanager`]) {
+                   if ((barman[day][`shiftmanager`][barMan]) == "1") {
+                     document.getElementById(`day${days[day]}_shiftmanager`).innerHTML += "<label class='checked'><input type='hidden' value='"+barMan+"' name='"+barMan+"'><input type='hidden' value='"+ day +"_1' name='" + barMan +"'><input type='hidden' value='shiftmanager' name='"+ barMan +"'>"+ barMan +"</label>"
+                   } else {
+                     document.getElementById(`day${days[day]}_shiftmanager`).innerHTML += "<label><input type='hidden' value='"+barMan+"' name='"+barMan+"'><input type='hidden' value='"+ day +"_0' name='" + barMan +"'><input type='hidden' value='shiftmanager' name='"+ barMan +"'>"+ barMan +"</label>"
+                   }
+                   document.getElementById(`day${days[day]}_shiftmanager`).addEventListener("click", click);
+                }
+              }
+
+            xhttp.open("GET", "/busyWait", true);
+            xhttp.send();
+          }, 500);
+          function clear(){
+            window.clearInterval(interval);
+          }
+        </script>
+      <% } %>
+      <form class="" action="/barmenUpdate" method="post">
+      <table>
+        <thead>
+          <tr> <!--  Table Header -->
+            <th></th>
+            <th>יום ראשון</th>
+            <th>יום שני</th>
+            <th>יום שלישי</th>
+            <th>יום רביעי</th>
+            <th>יום חמישי</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr <!-- 1st row  -->
+              <td>משמרת <br> ראשונה</td>
+              <td id="day1_1">
+              </td>
+              <td id="day2_1">
+
+              </td>
+              <td id="day3_1">
+              </td>
+              <td id="day4_1">
+              </td>
+              <td id="day5_1">
+              </td>
+            </tr>
+            <tr> <!-- 2nd row  -->
+              <td>משמרת <br> שנייה</td>
+              <td id="day1_2">
+              </td>
+              <td id="day2_2">
+              </td>
+              <td id="day3_2">
+
+              </td>
+              <td id="day4_2">
+              </td>
+              <td id="day5_2">
+
+              </td>
+            </tr>
+            <tr> <!-- 3th row  -->
+            <td>אחמ"ש</td>
+            <td id="day1_shiftmanager">
+
+            </td>
+            <td id="day2_shiftmanager">
+            </td>
+            <td id="day3_shiftmanager">
+
+            </td>
+            <td id="day4_shiftmanager">
+            </td>
+            <td id="day5_shiftmanager">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="submit" class="btnBlock" name="" value="עדכן">
+    </form>
+    </main>
+  </body>
+</html>

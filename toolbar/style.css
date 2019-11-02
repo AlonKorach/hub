@@ -3,6 +3,24 @@
     padding: 0;
 }
 
+body {
+  overflow:hidden;
+}
+
+:root {
+--black: #000000;
+--gray: #363636;
+--whitegray: #A2A2A2;
+--orange: #FF9800;
+--red: #F44336;
+--pink: #E91E63;
+--purple: #9C27B0;
+--darkPurple: #673AB7;
+--indigo: #3F51B5;
+--cyan: #00BCD4;
+--tent: #009688;
+}
+
 /* Titles */
 h1 {
     font-family: 'Segoe UI';
@@ -16,7 +34,7 @@ h2 {
     font-family: 'Segoe UI';
     color: #363636;
     font-size: 1.3rem;
-    font-weight: normal; 
+    font-weight: normal;
     line-height: 1.8rem;
 }
 
@@ -24,7 +42,7 @@ h3 {
     font-family: 'Segoe UI';
     color: #363636;
     font-size: 1rem;
-    font-weight: 300; 
+    font-weight: 300;
     line-height: 1.3rem;
 }
 
@@ -219,47 +237,47 @@ input, select {
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
 }
-  
+
 .col-3 {
     flex: 0 0 25%;
     max-width: 25%;
 }
-  
+
 .col-4 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
-  
+
 .col-5 {
     flex: 0 0 41.666667%;
     max-width: 41.666667%;
 }
-  
+
 .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
 }
-  
+
 .col-7 {
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
 }
-  
+
 .col-8 {
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
 }
-  
+
 .col-9 {
     flex: 0 0 75%;
     max-width: 75%;
 }
-  
+
 .col-10 {
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
 }
-  
+
 .col-11 {
     flex: 0 0 91.666667%;
     max-width: 91.666667%;
@@ -268,4 +286,56 @@ input, select {
 .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
+}
+
+/* Jumbtron */
+.jumbotron {
+    padding: 2rem 0rem;
+    background-color: #e9ecef;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 15vh;
+}
+
+/* Main */
+main {
+    direction: rtl;
+    position: relative;
+    height: 71vh;
+    transition: right 400ms linear;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.frame {
+  display: inline-block;
+  position: relative;
+}
+
+.fade * {
+    transition: left 0.4s;
+}
+
+
+
+/* Toolbar */
+.toolbar {
+    background-color: #e9ecef;
+    display: inline-block;
+    direction: rtl;
+    width: 100%;
+    height: 5vh;
+}
+
+.toolbar h2 {
+    display: inline-block;
+    border-bottom: 0.25rem solid #FF9800;
+}
+.toolbar h2.inactive {
+    border: 0;
+}
+.toolbar h2.inactive:hover {
+    cursor: pointer;
 }

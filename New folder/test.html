@@ -4,46 +4,27 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="test.css">
-    <script src="test.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="/test.js"></script>
   </head>
   <body>
+    <main>
+      <x-chart type="teens">
 
-    <div style="height: 250px; width: 250px;" class="diagram-Container">
+      </x-chart>
 
-      <div style="height: 87%" class="Chart-Container">
-        <span class="Chart-Title">500</span>
-       <div class="Chart">
-       </div>
-       <span class="Chart-Title">פטל</span>
-      </div>
+      <x-chart type="drinks">
 
-      <div style="height: 50%" class="Chart-Container">
-        <span class="Chart-Title">250</span>
-       <div class="Chart">
-       </div>
-       <span class="Chart-Title">שוקו</span>
-      </div>
+      </x-chart>
 
+      <x-chart type="games">
 
-      <div style="height: 27%" class="Chart-Container Active-Chart">
-        <span class="Chart-Title">250</span>
-       <div class="Chart">
-       </div>
-       <span class="Chart-Title">קפה</span>
-      </div>
+      </x-chart>
 
+      <x-chart type="newTeens">
 
-      <div style="height: 36%" class="Chart-Container">
-        <span class="Chart-Title">10</span>
-       <div class="Chart">
-       </div>
-       <span class="Chart-Title">תה</span>
-      </div>
-    </div>
+      </x-chart>
 
-    <x-chart>
-
-    </x-chart>
-
+    </main>
   </body>
 </html>

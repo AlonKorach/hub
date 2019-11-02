@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>MEOW</title><style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+	/* The Modal (background) */
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+	  position: relative;
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 0;
+	  border: 1px solid #888;
+	  width: 80%;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	  -webkit-animation-name: animatetop;
+	  -webkit-animation-duration: 0.4s;
+	  animation-name: animatetop;
+	  animation-duration: 0.4s
+	}
+
+	/* Add Animation */
+	@-webkit-keyframes animatetop {
+	  from {top:-300px; opacity:0} 
+	  to {top:0; opacity:1}
+	}
+
+	@keyframes animatetop {
+	  from {top:-300px; opacity:0}
+	  to {top:0; opacity:1}
+	}
+
+	/* The Close Button */
+	.close {
+	  color: grey;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	.modal-header {
+	  padding: 2px 16px;
+	}
+
+	.modal-body {padding: 2px 16px;}
+
+	.modal-footer {
+	  padding: 2px 16px;
+	}
+	button.button
+	{
+		background-color:lightgrey;
+		outline:none;
+		border:none;
+		width:100%;
+		font-size:15px;
+		padding:10px;
+		-webkit-transition:background-color 0.3s;
+	}
+	button.button:hover
+	{
+		background-color:grey;
+	}
+
+    body {
+        overflow-x: hidden;
+    }
+    #table td, th {
+        direction: rtl;
+        width: 11.1111111111%;
+        height: 11.1111111111vh;
+        background: white;
+        border-left-width: 1px;
+        border-bottom-width: 1px;
+        border-right-width: 0;
+        border-top-width: 0;
+        border-style: solid;
+        border-color: lightgrey;
+    }
+    button
+    {
+        background-color:lightgrey;
+        font-size:30px;
+        border:none;
+        outline:none;
+    }</style>
+</head>
+<body>
+<div style="visibility: hidden;" name="data" > <%=data%></div>
+<div style="visibility: hidden;" name="keys" > <%=keys%></div>
+<table id="table" border="0" cellspacing="0" cellpadding="0" style="width:100%;height:100vh;">
+    <tr id="5">
+        <th style="border-left-width:0;">אולם ראשון</th>
+        <th>אולם שני</th>
+        <th>אולם שלישי</th>
+        <th>מזכירות</th>
+        <th>פנאי</th>
+        <th>האב</th>
+        <th>סדנא</th>
+        <th>בריכה</th>
+        <th>זמן/אולם</th>
+
+    </tr>
+    <tr id="r1700">
+        <td style="border-left-width:0;" id="1olam1700" onclick="openmodal('1olam')"> </td>
+        <td id="2olam1700" onclick="openmodal('2olam')"> </td>
+        <td id="3olam1700" onclick="openmodal('3olam')"> </td>
+        <td id="maz1700" onclick="openmodal('maz')"> </td>
+        <td id="pnay1700" onclick="openmodal('pnay')"> </td>
+        <td id="hub1700" onclick="openmodal('hub')"> </td>
+        <td id="sadna1700" onclick="openmodal('sadna')"> </td>
+        <td id="pool1700" onclick="openmodal('pool')"> </td>
+        <td id="1700">17:00 </td>
+
+    </tr>
+    <tr id="r1730">
+        <td style="border-left-width:0;" id="1olam1730" onclick="openmodal('1olam')"> </td>
+        <td id="2olam1730" onclick="openmodal('2olam')"> </td>
+        <td id="3olam1730" onclick="openmodal('3olam')"> </td>
+        <td id="maz1730" onclick="openmodal('maz')"> </td>
+        <td id="pnay1730" onclick="openmodal('pnay')"> </td>
+        <td id="hub1730" onclick="openmodal('hub')"> </td>
+        <td id="sadna1730" onclick="openmodal('sadna')"> </td>
+        <td id="pool1730" onclick="openmodal('pool')"> </td>
+        <td id="1730">17:30 </td>
+
+    </tr>
+    <tr id="r1800">
+        <td style="border-left-width:0;" id="1olam1800" onclick="openmodal('1olam')"> </td>
+        <td id="2olam1800" onclick="openmodal('2olam')"> </td>
+        <td id="3olam1800" onclick="openmodal('3olam')"> </td>
+        <td id="maz1800" onclick="openmodal('maz')"> </td>
+        <td id="pnay1800" onclick="openmodal('pnay')"> </td>
+        <td id="hub1800" onclick="openmodal('hub')"> </td>
+        <td id="sadna1800" onclick="openmodal('sadna')"> </td>
+        <td id="pool1800" onclick="openmodal('pool')"> </td>
+        <td id="1800"> 18:00</td>
+    </tr>
+    <tr id="r1830">
+        <td style="border-left-width:0;" id="1olam1830" onclick="openmodal('1olam')"> </td>
+        <td id="2olam1830" onclick="openmodal('2olam')"> </td>
+        <td id="3olam1830" onclick="openmodal('3olam')"> </td>
+        <td id="maz1830" onclick="openmodal('maz')"> </td>
+        <td id="pnay1830" onclick="openmodal('pnay')"> </td>
+        <td id="hub1830" onclick="openmodal('hub')"> </td>
+        <td id="sadna1830" onclick="openmodal('sadna')"> </td>
+        <td id="pool1830" onclick="openmodal('pool')"> </td>
+        <td id="1830"> 18:30</td>
+    </tr>
+    <tr id="r1900">
+        <td id="1olam1900" style="border-left-width:0;" onclick="openmodal('1olam')"> </td>
+        <td id="2olam1900" onclick="openmodal('2olam')"> </td>
+        <td id="3olam1900" onclick="openmodal('3olam')"> </td>
+        <td id="maz1900" onclick="openmodal('maz')"> </td>
+        <td id="pnay1900" onclick="openmodal('pnay')"> </td>
+        <td id="hub1900" onclick="openmodal('hub')"> </td>
+        <td id="sadna1900" onclick="openmodal('sadna')"> </td>
+        <td id="pool1900" onclick="openmodal('pool')"> </td>
+        <td id="1900"> 19:00</td>
+    </tr>
+    <tr id="r1930">
+        <td style="border-left-width:0;" id="1olam1930" onclick="openmodal('1olam')"> </td>
+        <td id="2olam1930" onclick="openmodal('2olam')"> </td>
+        <td id="3olam1930" onclick="openmodal('3olam')"> </td>
+        <td id="maz1930" onclick="openmodal('maz')"> </td>
+        <td id="pnay1930" onclick="openmodal('pnay')"> </td>
+        <td id="hub1930" onclick="openmodal('hub')"> </td>
+        <td id="sadna1930" onclick="openmodal('sadna')"> </td>
+        <td id="pool1930" onclick="openmodal('pool')"> </td>
+        <td id="1930"> 19:30</td>
+    </tr>
+    <tr id="r2000">
+        <td style="border-left-width:0;" id="1olam2000" onclick="openmodal('1olam')"> </td>
+        <td id="2olam2000" onclick="openmodal('2olam')"> </td>
+        <td id="3olam2000" onclick="openmodal('3olam')"> </td>
+        <td id="maz2000" onclick="openmodal('maz')"> </td>
+        <td id="pnay000" onclick="openmodal('pnay')"> </td>
+        <td id="hub2000" onclick="openmodal('hub')"> </td>
+        <td id="sadna2000" onclick="openmodal('sadna')"> </td>
+        <td id="pool2000" onclick="openmodal('pool')"> </td>
+        <td id="2000"> 20:00</td>
+    </tr>
+    <tr  id="r2030">
+        <td id="1olam2030" style="border-bottom-width:0;border-left-width:0;" onclick="openmodal('1olam')"> </td>
+        <td id="2olam2030" style="border-bottom-width:0;" onclick="openmodal('2olam')"> </td>
+        <td id="3olam2030" style="border-bottom-width:0;" onclick="openmodal('3olam')"> </td>
+        <td id="maz2030" style="border-bottom-width:0;" onclick="openmodal('maz')"> </td>
+        <td id="pnay2030" style="border-bottom-width:0;" onclick="openmodal('pnay')"> </td>
+        <td id="hub2030" style="border-bottom-width:0;" onclick="openmodal('hub')"> </td>
+        <td id="sadna2030" style="border-bottom-width:0;" onclick="openmodal('sadna')"> </td>
+        <td id="pool2030" style="border-bottom-width:0;" onclick="openmodal('pool')"> </td>
+        <td id="2030" style="border-bottom-width:0;">20:30</td>
+    </tr>
+</table>
+<form hidden="hidden" method="POST" id="data" name="data" >
+<input name="tstart" id="tstart" />
+<input name="place" id="place" />
+<input name="tend" id="tend" />
+<input name="des" id="des" />
+<input name="date" id="date">
+</form>
+</body>
+</html>
+<script>
+/*var time=1700;
+for(j=0;j<7;j++){
+for(i=1;i<=15;i+=2){
+document.getElementById("r"+time).childNodes[i].innerHTML= "lol";
+
+}
+if (time % 100 == 0) {
+                time =time+30;
+            }
+else {
+                time =time+70;
+            }
+    console.log(time)    }
+    */
+
+
+    function openmodal(id) {
+     modelOpen(id);}
+</script>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" dir="rtl">
+    <div class="modal-header">
+      <h2>פעילות חדשה:</h2>
+    </div>
+    <div class="modal-body">
+      <p id="modal-content">Some text in the Modal Body</p>
+      <form action="/removenorr" method="POST" >
+    <input type="text" hidden="hidden" value=<%=date%> name="date">
+    שם פעילות:
+    <input type="text" name="name">
+    <br>
+    <button type="submit" value="submit">
+        הוסף
+    </button>
+    </form>
+    </div>
+    <div class="modal-footer">
+      <h3>
+      	<table style="width:100%;" cellspacing="10">
+        	<tr>
+                <td><button class="button" id="close">ביטול</button></td>
+            </tr>
+        </table>
+      </h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function byid(id)
+{
+    switch(id){
+    case "1olam": return "עולם 1"
+    case "2olam": return "עולם 2"
+    case "3olam": return "עולם 3"
+    case "maz": return "מזכירות"
+    case "pnay": return "פינת פנאי"
+    case "hub": return "חדר מחשבים (האב)"
+    case "sadna": return "סדנה"
+    case "pool": return "בריכה"
+}}
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementById("close");
+
+// When the user clicks the button, open the modal 
+function modelOpen(id)
+{
+    document.getElementById("modal-content").innerHTML = byid(id);
+    document.getElementById("place").innerHTML = id;
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target != modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

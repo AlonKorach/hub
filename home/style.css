@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+main.homePopup {
+  position: fixed;
+  background: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+}
+main header.teenInfoHeader {
+  background: #FF9800;
+}
+
+main header.teenInfoHeader span {
+  color: white;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+}
+
+main header.teenInfoHeader span#teenInfo {
+  color: black;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+  background: white;
+}
+
+main main.teenInfoMain {
+  background: linear-gradient(#FFD392, #FFF);
+}

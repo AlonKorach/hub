@@ -1,0 +1,2326 @@
+.mediaViewInfo {
+	--web-view-name: Homepage – Admin – 1;
+	--web-view-id: Homepage___Admin___1;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Homepage___Admin___1;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.Homepage___Admin___1_Class {
+	position: absolute;
+	box-sizing: border-box;
+	background: #E5E5E5;
+	width: 1920px;
+	height: 1200px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	--web-view-name: Homepage – Admin – 1;
+	--web-view-id: Homepage___Admin___1;
+	--web-enable-scale-up: true;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+.Group_8_Class {
+	position: absolute;
+	width: 1920px;
+	height: 263px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.BG {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 263px;
+	left: 0px;
+	top: 0px;
+}
+.___________________Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.549));
+	position: absolute;
+	left: 757px;
+	top: 31.191px;
+	overflow: visible;
+	width: 363px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	color: rgba(255,255,255,1);
+}
+.Group_10_Class {
+	position: absolute;
+	width: 1853.163px;
+	height: 50.216px;
+	left: 49.564px;
+	top: 124.517px;
+	overflow: visible;
+}
+.First_Name_Class {
+	position: absolute;
+	width: 1532.121px;
+	height: 50px;
+	left: 321.042px;
+	top: 0px;
+	overflow: visible;
+}
+.Group_9_Class {
+	position: absolute;
+	width: 1532.121px;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Textbox {
+	position: absolute;
+	overflow: visible;
+	width: 1532.121px;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+}
+.__________Class {
+	position: absolute;
+	left: 1424.121px;
+	top: 10px;
+	overflow: visible;
+	width: 99px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	color: rgba(205,205,205,1);
+}
+.Submit_Class {
+	position: absolute;
+	width: 209.441px;
+	height: 50px;
+	left: 0px;
+	top: 0.216px;
+	overflow: visible;
+}
+.Button {
+	position: absolute;
+	overflow: visible;
+	width: 209.441px;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+}
+.______________Class {
+	position: absolute;
+	left: 25.721px;
+	top: 10px;
+	overflow: visible;
+	width: 159px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(255,255,255,1);
+}
+.Group_13_Class {
+	position: absolute;
+	width: 1719.03px;
+	height: 51.653px;
+	left: 200.303px;
+	top: 211px;
+	overflow: visible;
+}
+.Group_35_Class {
+	position: absolute;
+	width: 234.823px;
+	height: 51.653px;
+	left: 1113.156px;
+	top: 0px;
+	overflow: visible;
+}
+.Head_Class {
+	opacity: 0;
+	position: absolute;
+	width: 234.823px;
+	height: 51.651px;
+	left: 0px;
+	top: 0.002px;
+	overflow: visible;
+}
+.BG_A9_Rectangle_5 {
+	position: absolute;
+	overflow: visible;
+	width: 234.823px;
+	height: 51.651px;
+	left: 0px;
+	top: 0px;
+}
+.___________Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	left: 13.542px;
+	top: 0px;
+	overflow: visible;
+	width: 137px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+}
+.Group_34_Class {
+	position: absolute;
+	width: 234.823px;
+	height: 51.653px;
+	left: 1484.208px;
+	top: 0px;
+	overflow: visible;
+}
+.Head_A9_Group_10_Class {
+	opacity: 0;
+	position: absolute;
+	width: 234.823px;
+	height: 51.651px;
+	left: 0px;
+	top: 0.002px;
+	overflow: visible;
+}
+.BG_A9_Rectangle_6 {
+	position: absolute;
+	overflow: visible;
+	width: 234.823px;
+	height: 51.651px;
+	left: 0px;
+	top: 0px;
+}
+._______Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	left: 59.49px;
+	top: 0px;
+	overflow: visible;
+	width: 77px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+}
+.Group_116_Class {
+	position: absolute;
+	width: 234.823px;
+	height: 51.653px;
+	left: 742.104px;
+	top: 0px;
+	overflow: visible;
+}
+.Head_A9_Group_12_Class {
+	opacity: 0;
+	position: absolute;
+	width: 234.823px;
+	height: 51.651px;
+	left: 0px;
+	top: 0.002px;
+	overflow: visible;
+}
+.BG_A9_Rectangle_7 {
+	position: absolute;
+	overflow: visible;
+	width: 234.823px;
+	height: 51.651px;
+	left: 0px;
+	top: 0px;
+}
+._______A9_Text_6_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	left: 55.594px;
+	top: 0px;
+	overflow: visible;
+	width: 81px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+}
+.Head_A9_Group_13_Class {
+	position: absolute;
+	width: 234.823px;
+	height: 6.751px;
+	left: 0px;
+	top: 44.902px;
+	overflow: visible;
+}
+.BG_A9_Rectangle_8 {
+	position: absolute;
+	overflow: visible;
+	width: 234.823px;
+	height: 6.751px;
+	left: 0px;
+	top: 0px;
+}
+.Group_117_Class {
+	position: absolute;
+	width: 234.823px;
+	height: 51.653px;
+	left: 371.052px;
+	top: 0px;
+	overflow: visible;
+}
+.Head_A9_Group_15_Class {
+	opacity: 0;
+	position: absolute;
+	width: 234.823px;
+	height: 51.651px;
+	left: 0px;
+	top: 0.002px;
+	overflow: visible;
+}
+.BG_A9_Rectangle_9 {
+	position: absolute;
+	overflow: visible;
+	width: 234.823px;
+	height: 51.651px;
+	left: 0px;
+	top: 0px;
+}
+._______A9_Text_7_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	left: 61.646px;
+	top: 0px;
+	overflow: visible;
+	width: 75px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+}
+.Group_119_Class {
+	position: absolute;
+	width: 234.823px;
+	height: 51.653px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Head_A9_Group_17_Class {
+	opacity: 0;
+	position: absolute;
+	width: 234.823px;
+	height: 51.651px;
+	left: 0px;
+	top: 0.002px;
+	overflow: visible;
+}
+.BG_A9_Rectangle_10 {
+	position: absolute;
+	overflow: visible;
+	width: 234.823px;
+	height: 51.651px;
+	left: 0px;
+	top: 0px;
+}
+._______A9_Text_8_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	left: 62.697px;
+	top: 0px;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 24px;
+	color: rgba(255,255,255,1);
+}
+.Group_121_Class {
+	position: absolute;
+	width: 598.2px;
+	height: 175.829px;
+	left: 994.8px;
+	top: 352.171px;
+	overflow: visible;
+}
+.__________A9_Text_9_Class {
+	position: absolute;
+	left: 474.581px;
+	top: 0px;
+	overflow: visible;
+	width: 112px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(17,17,17,1);
+}
+.Group_91_Class {
+	position: absolute;
+	width: 190px;
+	height: 83px;
+	left: 405.581px;
+	top: 45px;
+	overflow: visible;
+}
+.Rectangle_19_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_19 {
+	position: absolute;
+	overflow: visible;
+	width: 208px;
+	height: 101px;
+	left: 0px;
+	top: 0px;
+}
+._____Class {
+	position: absolute;
+	left: 136px;
+	top: 59px;
+	overflow: visible;
+	width: 29px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.chocolate_Class {
+	position: absolute;
+	width: 37.861px;
+	height: 50.935px;
+	left: 74.619px;
+	top: 6.065px;
+	overflow: visible;
+}
+.Path_24 {
+	overflow: visible;
+	position: absolute;
+	top: 26.029px;
+	left: 0px;
+	width: 11.196px;
+	height: 15.898px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_25 {
+	overflow: visible;
+	position: absolute;
+	top: 21.217px;
+	left: 8.143px;
+	width: 28.095px;
+	height: 29.718px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_26 {
+	overflow: visible;
+	position: absolute;
+	top: 21.217px;
+	left: 22.083px;
+	width: 14.155px;
+	height: 29.718px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_27 {
+	overflow: visible;
+	position: absolute;
+	top: 14.996px;
+	left: 6.52px;
+	width: 31.341px;
+	height: 7.747px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_28 {
+	overflow: visible;
+	position: absolute;
+	top: 14.997px;
+	left: 22.083px;
+	width: 15.778px;
+	height: 7.747px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_29 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 20.664px;
+	width: 3.054px;
+	height: 12.386px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_30 {
+	overflow: visible;
+	position: absolute;
+	top: 3.132px;
+	left: 13.128px;
+	width: 3.053px;
+	height: 9.254px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_90_Class {
+	position: absolute;
+	width: 9.17px;
+	height: 12.386px;
+	left: 22.082px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_31 {
+	overflow: visible;
+	position: absolute;
+	top: 3.132px;
+	left: 6.117px;
+	width: 3.053px;
+	height: 9.254px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_32 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1.635px;
+	height: 12.386px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_92_Class {
+	position: absolute;
+	width: 190px;
+	height: 83px;
+	left: 202.581px;
+	top: 45px;
+	overflow: visible;
+}
+.Rectangle_19_A9_Rectangle_12_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_19_A9_Rectangle_12 {
+	position: absolute;
+	overflow: visible;
+	width: 208px;
+	height: 101px;
+	left: 0px;
+	top: 0px;
+}
+.____Class {
+	position: absolute;
+	left: 136px;
+	top: 59px;
+	overflow: visible;
+	width: 29px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.coffee_Class {
+	position: absolute;
+	width: 38.33px;
+	height: 50.124px;
+	left: 74.698px;
+	top: 7.184px;
+	overflow: visible;
+}
+.XMLID_138_ {
+	overflow: visible;
+	position: absolute;
+	top: 42.753px;
+	left: 5.371px;
+	width: 13.794px;
+	height: 7.371px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_169_ {
+	overflow: visible;
+	position: absolute;
+	top: 11.794px;
+	left: 3.159px;
+	width: 16.006px;
+	height: 7.371px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_197_ {
+	overflow: visible;
+	position: absolute;
+	top: 42.753px;
+	left: 19.165px;
+	width: 13.794px;
+	height: 7.371px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_221_ {
+	overflow: visible;
+	position: absolute;
+	top: 11.794px;
+	left: 19.165px;
+	width: 16.006px;
+	height: 7.371px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_222_ {
+	overflow: visible;
+	position: absolute;
+	top: 19.165px;
+	left: 1.474px;
+	width: 17.691px;
+	height: 23.588px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_33_ {
+	overflow: visible;
+	position: absolute;
+	top: 19.165px;
+	left: 19.165px;
+	width: 17.691px;
+	height: 23.588px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_223_ {
+	overflow: visible;
+	position: absolute;
+	top: 23.588px;
+	left: 19.165px;
+	width: 5.897px;
+	height: 14.742px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_224_ {
+	overflow: visible;
+	position: absolute;
+	top: 23.588px;
+	left: 13.268px;
+	width: 5.897px;
+	height: 14.742px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_225_ {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 38.33px;
+	height: 11.794px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_96_Class {
+	position: absolute;
+	width: 190px;
+	height: 83px;
+	left: 0px;
+	top: 45px;
+	overflow: visible;
+}
+.Rectangle_19_A9_Rectangle_13_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_19_A9_Rectangle_13 {
+	position: absolute;
+	overflow: visible;
+	width: 208px;
+	height: 101px;
+	left: 0px;
+	top: 0px;
+}
+.___Class {
+	position: absolute;
+	left: 138px;
+	top: 59px;
+	overflow: visible;
+	width: 21px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.tea_cup_Class {
+	position: absolute;
+	width: 45.756px;
+	height: 46.591px;
+	left: 77.459px;
+	top: 10.272px;
+	overflow: visible;
+}
+.Group_93_Class {
+	position: absolute;
+	width: 40.664px;
+	height: 43.201px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_33 {
+	overflow: visible;
+	position: absolute;
+	top: 21.171px;
+	left: 0px;
+	width: 40.664px;
+	height: 22.031px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_34 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 17.79px;
+	width: 5.104px;
+	height: 15.252px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_35 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 27.091px;
+	width: 5.113px;
+	height: 15.252px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_36 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 9.297px;
+	width: 5.114px;
+	height: 15.252px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_37 {
+	overflow: visible;
+	position: absolute;
+	top: 27.949px;
+	left: 3.386px;
+	width: 12.71px;
+	height: 13.558px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_94_Class {
+	position: absolute;
+	width: 5.091px;
+	height: 12.727px;
+	left: 29.642px;
+	top: 20.34px;
+	overflow: visible;
+}
+.Path_38 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 1.702px;
+	width: 1.695px;
+	height: 6.762px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_39 {
+	overflow: visible;
+	position: absolute;
+	top: 4.237px;
+	left: 0px;
+	width: 5.091px;
+	height: 8.49px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_95_Class {
+	position: absolute;
+	width: 45.756px;
+	height: 23.72px;
+	left: 0px;
+	top: 22.87px;
+	overflow: visible;
+}
+.Path_40 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 36.964px;
+	width: 8.792px;
+	height: 15.149px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_41 {
+	overflow: visible;
+	position: absolute;
+	top: 20.331px;
+	left: 0px;
+	width: 38.977px;
+	height: 3.389px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.____A9_Group_29_Class {
+	position: absolute;
+	width: 109px;
+	height: 33px;
+	left: 489.2px;
+	top: 142.829px;
+	overflow: visible;
+}
+.Rectangle_14 {
+	position: absolute;
+	overflow: visible;
+	width: 109px;
+	height: 33px;
+	left: 0px;
+	top: 0px;
+}
+.Group_62_Class {
+	position: absolute;
+	width: 78.414px;
+	height: 14px;
+	left: 6.495px;
+	top: 9.599px;
+	overflow: visible;
+}
+.Label_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+	width: 79.414px;
+	height: 14px;
+	line-height: 14px;
+	margin-top: -1px;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(255,152,0,1);
+}
+.plus {
+	overflow: visible;
+	position: absolute;
+	top: 11.22px;
+	left: 83.039px;
+	width: 14.089px;
+	height: 13.78px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_122_Class {
+	position: absolute;
+	width: 404.718px;
+	height: 175.829px;
+	left: 308.882px;
+	top: 352.171px;
+	overflow: visible;
+}
+._________Class {
+	position: absolute;
+	left: 305.718px;
+	top: 0px;
+	overflow: visible;
+	width: 100px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(17,17,17,1);
+}
+.Group_114_Class {
+	position: absolute;
+	width: 190px;
+	height: 83px;
+	left: 201.718px;
+	top: 45px;
+	overflow: visible;
+}
+.Rectangle_19_A9_Rectangle_15_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_19_A9_Rectangle_15 {
+	position: absolute;
+	overflow: visible;
+	width: 208px;
+	height: 101px;
+	left: 0px;
+	top: 0px;
+}
+._____A9_Text_15_Class {
+	position: absolute;
+	left: 135px;
+	top: 59px;
+	overflow: visible;
+	width: 27px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.cereal_Class {
+	position: absolute;
+	width: 51.342px;
+	height: 43.099px;
+	left: 64.202px;
+	top: 9.533px;
+	overflow: visible;
+}
+.XMLID_2321_ {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 19.404px;
+	width: 31.174px;
+	height: 41.535px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2314_ {
+	overflow: visible;
+	position: absolute;
+	top: 21.193px;
+	left: 19.403px;
+	width: 8.082px;
+	height: 19.689px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2304_ {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 48.505px;
+	width: 2.073px;
+	height: 41.535px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2327_ {
+	overflow: visible;
+	position: absolute;
+	top: 12.784px;
+	left: 19.404px;
+	width: 31.174px;
+	height: 28.751px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_1662_ {
+	overflow: visible;
+	position: absolute;
+	top: 37.359px;
+	left: 22.939px;
+	width: 4.667px;
+	height: 1.527px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_1666_ {
+	overflow: visible;
+	position: absolute;
+	top: 34.748px;
+	left: 22.939px;
+	width: 2.979px;
+	height: 1.527px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2306_ {
+	overflow: visible;
+	position: absolute;
+	top: 23.419px;
+	left: 19.403px;
+	width: 8.082px;
+	height: 17.463px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2323_ {
+	overflow: visible;
+	position: absolute;
+	top: 12.784px;
+	left: 48.505px;
+	width: 2.073px;
+	height: 28.751px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_352__Class {
+	position: absolute;
+	width: 25.731px;
+	height: 20.178px;
+	left: 0px;
+	top: 22.921px;
+	overflow: visible;
+}
+.XMLID_382_ {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 15.915px;
+	width: 8.529px;
+	height: 8.529px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_374_ {
+	overflow: visible;
+	position: absolute;
+	top: 2.955px;
+	left: 15.915px;
+	width: 7.094px;
+	height: 5.573px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2515_ {
+	overflow: visible;
+	position: absolute;
+	top: 15.767px;
+	left: 8.777px;
+	width: 8.177px;
+	height: 4.412px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2337_ {
+	overflow: visible;
+	position: absolute;
+	top: 15.767px;
+	left: 8.776px;
+	width: 8.178px;
+	height: 2.969px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_452_ {
+	overflow: visible;
+	position: absolute;
+	top: 4.877px;
+	left: 0px;
+	width: 25.73px;
+	height: 12.893px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_362_ {
+	overflow: visible;
+	position: absolute;
+	top: 8.1px;
+	left: 0.378px;
+	width: 24.975px;
+	height: 3.762px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_1756__Class {
+	position: absolute;
+	width: 4.702px;
+	height: 4.702px;
+	left: 43.065px;
+	top: 34.384px;
+	overflow: visible;
+}
+.XMLID_1755_ {
+	position: absolute;
+	overflow: visible;
+	width: 4.702px;
+	height: 4.702px;
+	left: 0px;
+	top: 0px;
+}
+.XMLID_2045__Class {
+	position: absolute;
+	width: 4.702px;
+	height: 4.702px;
+	left: 39.005px;
+	top: 28.67px;
+	overflow: visible;
+}
+.XMLID_2047_ {
+	position: absolute;
+	overflow: visible;
+	width: 4.702px;
+	height: 4.702px;
+	left: 0px;
+	top: 0px;
+}
+.XMLID_2146__Class {
+	position: absolute;
+	width: 3.796px;
+	height: 3.796px;
+	left: 42.72px;
+	top: 23.329px;
+	overflow: visible;
+}
+.XMLID_2148_ {
+	position: absolute;
+	overflow: visible;
+	width: 3.796px;
+	height: 3.796px;
+	left: 0px;
+	top: 0px;
+}
+.XMLID_1815__Class {
+	position: absolute;
+	width: 5.221px;
+	height: 5.221px;
+	left: 32.795px;
+	top: 32.902px;
+	overflow: visible;
+}
+.XMLID_1817_ {
+	position: absolute;
+	overflow: visible;
+	width: 5.221px;
+	height: 5.221px;
+	left: 0px;
+	top: 0px;
+}
+.XMLID_2285_ {
+	position: absolute;
+	overflow: visible;
+	width: 20.064px;
+	height: 5.471px;
+	left: 25.374px;
+	top: 6.011px;
+}
+.XMLID_2303_ {
+	overflow: visible;
+	position: absolute;
+	top: 6.011px;
+	left: 25.374px;
+	width: 20.064px;
+	height: 5.471px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_1630_ {
+	overflow: visible;
+	position: absolute;
+	top: 13.672px;
+	left: 24.841px;
+	width: 2.765px;
+	height: 1.527px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_1627_ {
+	overflow: visible;
+	position: absolute;
+	top: 15.668px;
+	left: 24.841px;
+	width: 2.765px;
+	height: 1.527px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_608_ {
+	overflow: visible;
+	position: absolute;
+	top: 1.77px;
+	left: 18.641px;
+	width: 32.701px;
+	height: 1.527px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_115_Class {
+	transform: rotate(-1deg);
+	transform-origin: left;
+	position: absolute;
+	width: 190px;
+	height: 83px;
+	left: 0px;
+	top: 43.415px;
+	overflow: visible;
+}
+.Rectangle_19_A9_Rectangle_17_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_19_A9_Rectangle_17 {
+	position: absolute;
+	overflow: visible;
+	width: 209.419px;
+	height: 104.303px;
+	left: 0px;
+	top: 0px;
+}
+.______Class {
+	position: absolute;
+	left: 132.01px;
+	top: 59.427px;
+	overflow: visible;
+	width: 35px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.cereal_A9_Group_40_Class {
+	position: absolute;
+	width: 51.342px;
+	height: 43.099px;
+	left: 64.358px;
+	top: 10.831px;
+	overflow: visible;
+}
+.XMLID_2321__A9_Path_47 {
+	overflow: visible;
+	position: absolute;
+	top: 0.013px;
+	left: 19.401px;
+	width: 31.894px;
+	height: 42.073px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2314__A9_Path_48 {
+	overflow: visible;
+	position: absolute;
+	top: 21.606px;
+	left: 19.771px;
+	width: 8.424px;
+	height: 19.827px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2304__A9_Path_49 {
+	overflow: visible;
+	position: absolute;
+	top: 0.013px;
+	left: 48.497px;
+	width: 2.798px;
+	height: 41.565px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2327__A9_Path_50 {
+	overflow: visible;
+	position: absolute;
+	top: 12.796px;
+	left: 19.624px;
+	width: 31.671px;
+	height: 29.291px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_1662__A9_Path_51 {
+	overflow: visible;
+	position: absolute;
+	top: 37.767px;
+	left: 23.588px;
+	width: 4.693px;
+	height: 1.609px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_1666__A9_Path_52 {
+	overflow: visible;
+	position: absolute;
+	top: 35.187px;
+	left: 23.542px;
+	width: 3.005px;
+	height: 1.579px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2306__A9_Path_53 {
+	overflow: visible;
+	position: absolute;
+	top: 23.832px;
+	left: 19.809px;
+	width: 8.385px;
+	height: 17.601px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2323__A9_Path_54 {
+	overflow: visible;
+	position: absolute;
+	top: 12.796px;
+	left: 48.721px;
+	width: 2.575px;
+	height: 28.783px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_352__A9_Group_41_Class {
+	position: absolute;
+	width: 25.731px;
+	height: 20.178px;
+	left: 0.4px;
+	top: 23.364px;
+	overflow: visible;
+}
+.XMLID_382__A9_Path_55 {
+	overflow: visible;
+	position: absolute;
+	top: 0.023px;
+	left: 15.913px;
+	width: 8.676px;
+	height: 8.676px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_374__A9_Path_56 {
+	overflow: visible;
+	position: absolute;
+	top: 3.002px;
+	left: 15.964px;
+	width: 7.19px;
+	height: 5.696px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2515__A9_Path_57 {
+	overflow: visible;
+	position: absolute;
+	top: 15.917px;
+	left: 9.051px;
+	width: 8.253px;
+	height: 4.554px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_2337__A9_Path_58 {
+	overflow: visible;
+	position: absolute;
+	top: 15.917px;
+	left: 9.051px;
+	width: 8.228px;
+	height: 3.111px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_452__A9_Path_59 {
+	overflow: visible;
+	position: absolute;
+	top: 4.877px;
+	left: 0.085px;
+	width: 25.952px;
+	height: 13.34px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_362__A9_Path_60 {
+	overflow: visible;
+	position: absolute;
+	top: 8.105px;
+	left: 0.52px;
+	width: 25.036px;
+	height: 4.197px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_1756__A9_Group_42_Class {
+	position: absolute;
+	width: 4.702px;
+	height: 4.702px;
+	left: 43.659px;
+	top: 34.441px;
+	overflow: visible;
+}
+.XMLID_1755__A9_Ellipse_5 {
+	position: absolute;
+	overflow: visible;
+	width: 4.784px;
+	height: 4.783px;
+	left: 0px;
+	top: 0px;
+}
+.XMLID_2045__A9_Group_43_Class {
+	position: absolute;
+	width: 4.702px;
+	height: 4.702px;
+	left: 39.5px;
+	top: 28.799px;
+	overflow: visible;
+}
+.XMLID_2047__A9_Ellipse_6 {
+	position: absolute;
+	overflow: visible;
+	width: 4.784px;
+	height: 4.783px;
+	left: 0px;
+	top: 0px;
+}
+.XMLID_2146__A9_Group_44_Class {
+	position: absolute;
+	width: 3.796px;
+	height: 3.796px;
+	left: 43.121px;
+	top: 23.41px;
+	overflow: visible;
+}
+.XMLID_2148__A9_Ellipse_7 {
+	position: absolute;
+	overflow: visible;
+	width: 3.862px;
+	height: 3.862px;
+	left: 0px;
+	top: 0px;
+}
+.XMLID_1815__A9_Group_45_Class {
+	position: absolute;
+	width: 5.221px;
+	height: 5.221px;
+	left: 33.365px;
+	top: 33.129px;
+	overflow: visible;
+}
+.XMLID_1817__A9_Ellipse_8 {
+	position: absolute;
+	overflow: visible;
+	width: 5.311px;
+	height: 5.311px;
+	left: 0px;
+	top: 0px;
+}
+.XMLID_2285__A9_Rectangle_18 {
+	position: absolute;
+	overflow: visible;
+	width: 20.157px;
+	height: 5.82px;
+	left: 25.475px;
+	top: 6.113px;
+}
+.XMLID_2303__A9_Path_61 {
+	overflow: visible;
+	position: absolute;
+	top: 6.113px;
+	left: 25.475px;
+	width: 20.157px;
+	height: 5.82px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_1630__A9_Path_62 {
+	overflow: visible;
+	position: absolute;
+	top: 14.083px;
+	left: 25.075px;
+	width: 2.792px;
+	height: 1.575px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_1627__A9_Path_63 {
+	overflow: visible;
+	position: absolute;
+	top: 16.079px;
+	left: 25.11px;
+	width: 2.792px;
+	height: 1.575px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_608__A9_Path_64 {
+	overflow: visible;
+	position: absolute;
+	top: 1.77px;
+	left: 18.668px;
+	width: 32.723px;
+	height: 2.098px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.____A9_Group_46_Class {
+	position: absolute;
+	width: 109px;
+	height: 33px;
+	left: 285.118px;
+	top: 142.829px;
+	overflow: visible;
+}
+.Rectangle_14_A9_Rectangle_19 {
+	position: absolute;
+	overflow: visible;
+	width: 109px;
+	height: 33px;
+	left: 0px;
+	top: 0px;
+}
+.Group_62_A9_Group_47_Class {
+	position: absolute;
+	width: 78.414px;
+	height: 14px;
+	left: 6.715px;
+	top: 9.599px;
+	overflow: visible;
+}
+.Label_A9_Text_17_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+	width: 79.414px;
+	height: 14px;
+	line-height: 14px;
+	margin-top: -1px;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(255,152,0,1);
+}
+.plus_A9_Path_65 {
+	overflow: visible;
+	position: absolute;
+	top: 11.22px;
+	left: 83.258px;
+	width: 14.089px;
+	height: 13.78px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_76_Class {
+	position: absolute;
+	width: 1919.615px;
+	height: 38px;
+	left: 0px;
+	top: 263.171px;
+	overflow: visible;
+}
+.Rectangle_18 {
+	position: absolute;
+	overflow: visible;
+	width: 1919.614px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+._______________________________Class {
+	position: absolute;
+	left: 1645.614px;
+	top: 9px;
+	overflow: visible;
+	width: 255px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(17,17,17,1);
+}
+.Submit_A9_Group_49_Class {
+	position: absolute;
+	width: 234.41px;
+	height: 50px;
+	left: 10.564px;
+	top: 276px;
+	overflow: visible;
+}
+.Button_A9_Rectangle_21_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Button_A9_Rectangle_21 {
+	position: absolute;
+	overflow: visible;
+	width: 252.41px;
+	height: 68px;
+	left: 0px;
+	top: 0px;
+}
+.______________A9_Text_19_Class {
+	position: absolute;
+	left: 18.721px;
+	top: 7px;
+	overflow: visible;
+	width: 153px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(255,152,0,1);
+}
+.plus_A9_Path_66 {
+	overflow: visible;
+	position: absolute;
+	top: 10px;
+	left: 186.967px;
+	width: 29.527px;
+	height: 28.879px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_120_Class {
+	position: absolute;
+	width: 192.658px;
+	height: 175.829px;
+	left: 1688.342px;
+	top: 352.171px;
+	overflow: visible;
+}
+.__________A9_Text_20_Class {
+	position: absolute;
+	left: 55px;
+	top: 0px;
+	overflow: visible;
+	width: 109px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(17,17,17,1);
+}
+.Group_89_Class {
+	position: absolute;
+	width: 190px;
+	height: 83px;
+	left: 0px;
+	top: 45px;
+	overflow: visible;
+}
+.Rectangle_19_A9_Rectangle_22_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_19_A9_Rectangle_22 {
+	position: absolute;
+	overflow: visible;
+	width: 208px;
+	height: 101px;
+	left: 0px;
+	top: 0px;
+}
+.strawberry_juice_Class {
+	position: absolute;
+	width: 36px;
+	height: 53.644px;
+	left: 68.675px;
+	top: 4px;
+	overflow: visible;
+}
+.Group_81_Class {
+	position: absolute;
+	width: 18.828px;
+	height: 15.922px;
+	left: 17.172px;
+	top: 8.168px;
+	overflow: visible;
+}
+.Group_77_Class {
+	position: absolute;
+	width: 10.316px;
+	height: 5.72px;
+	left: 8.399px;
+	top: 6.095px;
+	overflow: visible;
+}
+.Path_11 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 10.316px;
+	height: 5.72px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_78_Class {
+	position: absolute;
+	width: 4.736px;
+	height: 11.412px;
+	left: 9.622px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_12 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 4.736px;
+	height: 11.412px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_79_Class {
+	position: absolute;
+	width: 9.312px;
+	height: 5.05px;
+	left: 9.516px;
+	top: 4.179px;
+	overflow: visible;
+}
+.Path_13 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 9.312px;
+	height: 5.05px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_80_Class {
+	position: absolute;
+	width: 15.168px;
+	height: 13.832px;
+	left: 0px;
+	top: 2.09px;
+	overflow: visible;
+}
+.Path_14 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 15.168px;
+	height: 13.832px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_15 {
+	overflow: visible;
+	position: absolute;
+	top: 2.097px;
+	left: 0px;
+	width: 8.805px;
+	height: 13.503px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_82_Class {
+	position: absolute;
+	width: 25.358px;
+	height: 37.166px;
+	left: 0px;
+	top: 16.478px;
+	overflow: visible;
+}
+.Path_16 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 25.358px;
+	height: 37.166px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_83_Class {
+	position: absolute;
+	width: 12.111px;
+	height: 37.166px;
+	left: 0px;
+	top: 16.478px;
+	overflow: visible;
+}
+.Path_17 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 12.111px;
+	height: 37.166px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_84_Class {
+	position: absolute;
+	width: 21.277px;
+	height: 32.348px;
+	left: 2.041px;
+	top: 16.478px;
+	overflow: visible;
+}
+.Path_18 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 21.277px;
+	height: 32.348px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_85_Class {
+	position: absolute;
+	width: 19.965px;
+	height: 25.067px;
+	left: 2.696px;
+	top: 23.61px;
+	overflow: visible;
+}
+.Path_19 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 19.965px;
+	height: 25.067px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_86_Class {
+	position: absolute;
+	width: 10.128px;
+	height: 25.067px;
+	left: 2.696px;
+	top: 23.61px;
+	overflow: visible;
+}
+.Path_20 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 10.128px;
+	height: 25.067px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_21 {
+	overflow: visible;
+	position: absolute;
+	top: 27.14px;
+	left: 15.917px;
+	width: 4.308px;
+	height: 18.007px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_88_Class {
+	position: absolute;
+	width: 4.773px;
+	height: 16.323px;
+	left: 2.831px;
+	top: 0px;
+	overflow: visible;
+}
+.Group_87_Class {
+	position: absolute;
+	width: 4.773px;
+	height: 16.323px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_22 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 4.773px;
+	height: 16.323px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.____A9_Text_21_Class {
+	position: absolute;
+	left: 138px;
+	top: 59px;
+	overflow: visible;
+	width: 27px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.____A9_Group_65_Class {
+	position: absolute;
+	width: 109px;
+	height: 33px;
+	left: 83.658px;
+	top: 142.829px;
+	overflow: visible;
+}
+.Rectangle_14_A9_Rectangle_23 {
+	position: absolute;
+	overflow: visible;
+	width: 109px;
+	height: 33px;
+	left: 0px;
+	top: 0px;
+}
+.Group_62_A9_Group_66_Class {
+	position: absolute;
+	width: 78.414px;
+	height: 14px;
+	left: 6.457px;
+	top: 9.599px;
+	overflow: visible;
+}
+.Label_A9_Text_22_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+	width: 79.414px;
+	height: 14px;
+	line-height: 14px;
+	margin-top: -1px;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(255,152,0,1);
+}
+.plus_A9_Path_79 {
+	overflow: visible;
+	position: absolute;
+	top: 11.22px;
+	left: 83px;
+	width: 14.089px;
+	height: 13.78px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_126_Class {
+	position: absolute;
+	width: 598.2px;
+	height: 175.829px;
+	left: 1284.8px;
+	top: 642.171px;
+	overflow: visible;
+}
+.__________A9_Text_23_Class {
+	position: absolute;
+	left: 474.581px;
+	top: 0px;
+	overflow: visible;
+	width: 112px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(17,17,17,1);
+}
+.Group_91_A9_Group_68_Class {
+	position: absolute;
+	width: 190px;
+	height: 83px;
+	left: 405.581px;
+	top: 45px;
+	overflow: visible;
+}
+.Rectangle_19_A9_Rectangle_24_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_19_A9_Rectangle_24 {
+	position: absolute;
+	overflow: visible;
+	width: 208px;
+	height: 101px;
+	left: 0px;
+	top: 0px;
+}
+._____A9_Text_24_Class {
+	position: absolute;
+	left: 136px;
+	top: 59px;
+	overflow: visible;
+	width: 29px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.chocolate_A9_Group_69_Class {
+	position: absolute;
+	width: 37.861px;
+	height: 50.935px;
+	left: 74.619px;
+	top: 6.065px;
+	overflow: visible;
+}
+.Path_24_A9_Path_80 {
+	overflow: visible;
+	position: absolute;
+	top: 26.029px;
+	left: 0px;
+	width: 11.196px;
+	height: 15.898px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_25_A9_Path_81 {
+	overflow: visible;
+	position: absolute;
+	top: 21.217px;
+	left: 8.143px;
+	width: 28.095px;
+	height: 29.718px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_26_A9_Path_82 {
+	overflow: visible;
+	position: absolute;
+	top: 21.217px;
+	left: 22.083px;
+	width: 14.155px;
+	height: 29.718px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_27_A9_Path_83 {
+	overflow: visible;
+	position: absolute;
+	top: 14.996px;
+	left: 6.52px;
+	width: 31.341px;
+	height: 7.747px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_28_A9_Path_84 {
+	overflow: visible;
+	position: absolute;
+	top: 14.997px;
+	left: 22.083px;
+	width: 15.778px;
+	height: 7.747px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_29_A9_Path_85 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 20.664px;
+	width: 3.054px;
+	height: 12.386px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_30_A9_Path_86 {
+	overflow: visible;
+	position: absolute;
+	top: 3.132px;
+	left: 13.128px;
+	width: 3.053px;
+	height: 9.254px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_90_A9_Group_70_Class {
+	position: absolute;
+	width: 9.17px;
+	height: 12.386px;
+	left: 22.082px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_31_A9_Path_87 {
+	overflow: visible;
+	position: absolute;
+	top: 3.132px;
+	left: 6.117px;
+	width: 3.053px;
+	height: 9.254px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_32_A9_Path_88 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 1.635px;
+	height: 12.386px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_92_A9_Group_71_Class {
+	position: absolute;
+	width: 190px;
+	height: 83px;
+	left: 202.581px;
+	top: 45px;
+	overflow: visible;
+}
+.Rectangle_19_A9_Rectangle_25_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_19_A9_Rectangle_25 {
+	position: absolute;
+	overflow: visible;
+	width: 208px;
+	height: 101px;
+	left: 0px;
+	top: 0px;
+}
+.____A9_Text_25_Class {
+	position: absolute;
+	left: 136px;
+	top: 59px;
+	overflow: visible;
+	width: 29px;
+	white-space: nowrap;
+	text-align: right;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.coffee_A9_Group_72_Class {
+	position: absolute;
+	width: 38.33px;
+	height: 50.124px;
+	left: 74.698px;
+	top: 7.184px;
+	overflow: visible;
+}
+.XMLID_138__A9_Path_89 {
+	overflow: visible;
+	position: absolute;
+	top: 42.753px;
+	left: 5.371px;
+	width: 13.794px;
+	height: 7.371px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_169__A9_Path_90 {
+	overflow: visible;
+	position: absolute;
+	top: 11.794px;
+	left: 3.159px;
+	width: 16.006px;
+	height: 7.371px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_197__A9_Path_91 {
+	overflow: visible;
+	position: absolute;
+	top: 42.753px;
+	left: 19.165px;
+	width: 13.794px;
+	height: 7.371px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_221__A9_Path_92 {
+	overflow: visible;
+	position: absolute;
+	top: 11.794px;
+	left: 19.165px;
+	width: 16.006px;
+	height: 7.371px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_222__A9_Path_93 {
+	overflow: visible;
+	position: absolute;
+	top: 19.165px;
+	left: 1.474px;
+	width: 17.691px;
+	height: 23.588px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_33__A9_Path_94 {
+	overflow: visible;
+	position: absolute;
+	top: 19.165px;
+	left: 19.165px;
+	width: 17.691px;
+	height: 23.588px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_223__A9_Path_95 {
+	overflow: visible;
+	position: absolute;
+	top: 23.588px;
+	left: 19.165px;
+	width: 5.897px;
+	height: 14.742px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_224__A9_Path_96 {
+	overflow: visible;
+	position: absolute;
+	top: 23.588px;
+	left: 13.268px;
+	width: 5.897px;
+	height: 14.742px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.XMLID_225__A9_Path_97 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 38.33px;
+	height: 11.794px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_96_A9_Group_73_Class {
+	position: absolute;
+	width: 190px;
+	height: 83px;
+	left: 0px;
+	top: 45px;
+	overflow: visible;
+}
+.Rectangle_19_A9_Rectangle_26_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+}
+.Rectangle_19_A9_Rectangle_26 {
+	position: absolute;
+	overflow: visible;
+	width: 208px;
+	height: 101px;
+	left: 0px;
+	top: 0px;
+}
+.___A9_Text_26_Class {
+	position: absolute;
+	left: 138px;
+	top: 59px;
+	overflow: visible;
+	width: 21px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.tea_cup_A9_Group_74_Class {
+	position: absolute;
+	width: 45.756px;
+	height: 46.591px;
+	left: 77.459px;
+	top: 10.272px;
+	overflow: visible;
+}
+.Group_93_A9_Group_75_Class {
+	position: absolute;
+	width: 40.664px;
+	height: 43.201px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_33_A9_Path_98 {
+	overflow: visible;
+	position: absolute;
+	top: 21.171px;
+	left: 0px;
+	width: 40.664px;
+	height: 22.031px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_34_A9_Path_99 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 17.79px;
+	width: 5.104px;
+	height: 15.252px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_35_A9_Path_100 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 27.091px;
+	width: 5.113px;
+	height: 15.252px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_36_A9_Path_101 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 9.297px;
+	width: 5.114px;
+	height: 15.252px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_37_A9_Path_102 {
+	overflow: visible;
+	position: absolute;
+	top: 27.949px;
+	left: 3.386px;
+	width: 12.71px;
+	height: 13.558px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_94_A9_Group_76_Class {
+	position: absolute;
+	width: 5.091px;
+	height: 12.727px;
+	left: 29.642px;
+	top: 20.34px;
+	overflow: visible;
+}
+.Path_38_A9_Path_103 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 1.702px;
+	width: 1.695px;
+	height: 6.762px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_39_A9_Path_104 {
+	overflow: visible;
+	position: absolute;
+	top: 4.237px;
+	left: 0px;
+	width: 5.091px;
+	height: 8.49px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_95_A9_Group_77_Class {
+	position: absolute;
+	width: 45.756px;
+	height: 23.72px;
+	left: 0px;
+	top: 22.87px;
+	overflow: visible;
+}
+.Path_40_A9_Path_105 {
+	overflow: visible;
+	position: absolute;
+	top: 0px;
+	left: 36.964px;
+	width: 8.792px;
+	height: 15.149px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_41_A9_Path_106 {
+	overflow: visible;
+	position: absolute;
+	top: 20.331px;
+	left: 0px;
+	width: 38.977px;
+	height: 3.389px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.____A9_Group_78_Class {
+	position: absolute;
+	width: 109px;
+	height: 33px;
+	left: 489.2px;
+	top: 142.829px;
+	overflow: visible;
+}
+.Rectangle_14_A9_Rectangle_27 {
+	position: absolute;
+	overflow: visible;
+	width: 109px;
+	height: 33px;
+	left: 0px;
+	top: 0px;
+}
+.Group_62_A9_Group_79_Class {
+	position: absolute;
+	width: 78.414px;
+	height: 14px;
+	left: 6.495px;
+	top: 9.599px;
+	overflow: visible;
+}
+.Label_A9_Text_27_Class {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+	width: 79.414px;
+	height: 14px;
+	line-height: 14px;
+	margin-top: -1px;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: rgba(255,152,0,1);
+}
+.plus_A9_Path_107 {
+	overflow: visible;
+	position: absolute;
+	top: 11.22px;
+	left: 83.039px;
+	width: 14.089px;
+	height: 13.78px;
+	transform: matrix(1,0,0,1,0,0);
+}

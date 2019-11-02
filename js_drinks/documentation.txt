@@ -1,0 +1,33 @@
+constructor:
+new stats_handler(the stats file's uri, the serialization file's uri)
+
+save:
+save_stats saves the stats to the stats file
+save_serialization saves the serialization array to the serialization file
+it is important to save often
+
+load:
+load_stats and load_serialization load the stats and serialization array from their files, this is automatically done at the start
+
+add_stat:
+add_stat takes a name and adds a stat whose name is the given name
+
+increase a stat:
+increase_stat_by_num and increase_stat_by_name both increase a certain statistic by a certain amount
+increase_stat_by_num takes the stat's number first and than the amount to increase
+increase_stat_by_name takes the stat's name first and than the amount to increase
+
+set a stat:
+set_stat_by_num and set_stat_by_name work exactly like the increasing functions but they set the value instead of increasing it
+
+reset:
+reset sets all stats to 0
+
+remove a stat:
+remove_stat_by_num and remove_stat_by_name both remove a stat, one takes a number, the other takes a name
+
+output:
+output prints the file URIs and their arrays, it is practically useless and is only useful for quick debugging
+
+get a stat:
+get_stat_by_num and get_stat_by_name both get a stat's value, one takes the stat's number, the other takes its name
