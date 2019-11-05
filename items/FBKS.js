@@ -19,7 +19,7 @@ class FB {
     addDBRow(path, key, data){
         var ref =  this.db.ref("/");
         // let date = `${new Date().getDate()}_${new Date().getMonth()}_${new Date().getFullYear()}`;
-        let ItemREF = ref.child(path).set({
+        let ItemREF = ref.child(path).update({
         [key]: data
         });
         var key = ItemREF.key;

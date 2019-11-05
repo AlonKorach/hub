@@ -11,13 +11,16 @@ function formValidation() {
     let name            = form.elements.item(0).value;
 
     let cat             = form.elements.item(1).value;
-    if (cat == "") cats = form.elements.item(3).value
+    if (form.elements.item(1).id == "") cat = form.elements.item(3).value
 
     let limited          = form.elements.item(2).value;
-    if (limited == "") limited  = form.elements.items(4).value
+    if (form.elements.item(2).id == "cat") limited  = form.elements.item(4).value
 
     let img             = form.elements.item(3).value;
-    if (img == "") img  =  form.elements.item(5).value;
+    if (form.elements.item(3).id != "img") {
+     img  =  form.elements.item(5).value;
+     if (img == "") img = form.elements.item(6).value;
+   }
 
     if (!nameValidation(name)) {
       if (!nameValidation(name, 1)) document.getElementById('error1').style.display = 'block';
@@ -55,13 +58,15 @@ function numberValidation(number, numb = null) {
   switch (numb) {
     case 0:
       if (number.length < 0) return false;
+      if (number.length > 5) return false;
     case 1:
       var exp = /^[0-9]+$/;
       if (!number.match(exp)) return false;
+      if (number.includes(".")) return error
       break;
     default:
       var exp = /^[0-9]+$/;
-      if (number.lenth < 0 || !number.match(exp)) return false;
+      if (number.lenth < 0 || !number.match(exp) || number.includes(".") || number.length > 5) return false;
   }
   return true;
 }
@@ -80,13 +85,13 @@ function nameValidation(name, numb = null) {
             break;
         break;
         case 2:
-            var alphaExp = /^[a-zא1-ת]+/i
+            var alphaExp = /^[a-zא-ת\s]+$/i
             if (!name.match(alphaExp)) {
                 return false;
             }
             break;
         default:
-        var alphaExp = /^[a-zא-ת]+/i
+        var alphaExp = /^[a-zא-ת\s]+$/i
         if (name.length < 2) {
             return false;
         } else if (!name.match(alphaExp)) {

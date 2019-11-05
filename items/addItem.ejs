@@ -11,12 +11,12 @@
         <section>
           <div>
               <label for="item">שם הפריט</label>
-              <input name="item" id="item" <% if (item != "") %> value="<%= item['item'] %>" required>
+              <input name="item" id="item" <% if (item != ""){ %> value="<%= item['item'] %>" <% }%>required>
               <% if (item != "") { %>
-                <input type="hidden" name="oldName" < if (item != "") %> value="<% item['item'] %>">
+                <input type="hidden" name="oldName" <% if (item != "") { %> value="<%= item['item'] %>" <% } %> >
               <% } %>
-              <span id="error1" class="error" <% if (error == "err1") %> style="disply: block;">לא הוזן שם פריט או שהוזן רק תו אחד</span>
-              <span id="error2" class="error" <% if (error == "err2") %> style="disply: block;">שם הפריט שהוזן אינו חוקי</span>
+              <span id="error1" class="error" <% if (error == "err1"){ %> style="display: block;" <% }%>>>לא הוזן שם פריט או שהוזן רק תו אחד</span>
+              <span id="error2" class="error" <% if (error == "err2"){ %> style="display: block;" <% }%>>שם הפריט שהוזן אינו חוקי</span>
             </div>
             <div>
                 <label>קטגוריה</label>
@@ -27,14 +27,17 @@
                      <option value="<%= Object.keys(cats)[i] %>"><%= Object.keys(cats)[i] %></option>
                      <% }} %>
                 </select>
-                <span id="error3" class="error">יש לבחור קטגוריה</span>
+                <% if (item != "") { %>
+                  <input type="hidden" name="oldCat" <% if (item != "") { %> value="<%= catName %>" <% } %> >
+                <% } %>
+              <span id="error3" class="error">יש לבחור קטגוריה</span>
               </div>
               <diV>
                 <label>הגבלת שימוש</label>
                 <% if (item != "") { var limited = parseInt(item['limited']); } %>
                 <input type="number" name="limited" id="limited" <% if (item != ""){ %> value="<%= limited %>" <% } else { %> value="0" <% } %> required>
-                <span id="error4" class="error" <% if (error == "err4") %> style="disply: block;">לא הוזן ערך</span>
-                <span id="error5" class="error" <% if (error == "err5") %> style="disply: block;">יש להזין מספרים בלבד</span>
+                <span id="error4" class="error" <% if (error == "err4") {%> style="display: block;" <% }%>>לא הוזן ערך</span>
+                <span id="error5" class="error" <% if (error == "err5") { %> style="display: block;"  <% }%>>יש להזין מספרים בלבד</span>
               </div>
         </section>
         <section>
@@ -54,7 +57,7 @@
                 </path>
               </svg>
             </span>
-            <input type="file" name="img" id="img" <% if (item == "") "required" %>  hidden>
+            <input type="file" name="img" id="img" <% if (item == ""){ "required" }%>  hidden>
           </label>
           <% if (item != "") { %>
             <img class="img" src="<%= item['img']%>">
@@ -76,7 +79,10 @@
           </div>
         </section>
         <section>
-          <input type="submit" value="הוספה">
+          <% let value = "הוספה"
+          if (item != "") { value = "עריכה" }
+          %>
+          <input type="submit" value="<%= value %>">
         </section>
     </form>
   </body>

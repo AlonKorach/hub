@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="login_2.css">
+    <title>בר כניסה למשתמש</title>
+
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="card">
+      <div class="title">
+        <p>!ברוכים השבים</p>
+        <p class="orangetxt">התגעגנו</p>
+        </div>
+        <div class="error" id="error">
+        </div>
+        <div class="login-container">
+        <form action="javascript:login()" class="user-login">
+          <div class="txt">
+            <label type="username">שם משתמש</label> <br>
+          </div>
+            <input type="txtbox" name="username" id="email" value="">
+          <div class="txt">
+            <label for="password">סיסמה</label> <br>
+            </div>
+              <input type="password" name="pasword" id="password" value="">
+              <br><br><button type="submit" name="button"><div class="txtbtn">כניסה</div></button>
+          </form>
+        </div>
+          </div>
+
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+      <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+      <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+
+     <script>
+         // Your web app's Firebase configuration
+         var firebaseConfig = {
+           apiKey: "AIzaSyDCQ7O-4EUfyPI_iX9zHa9LSZ4UDPXNwLk",
+           authDomain: "hubks-b0507.firebaseapp.com",
+           databaseURL: "https://hubks-b0507.firebaseio.com",
+           projectId: "hubks-b0507",
+         };
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+
+         // make auth and firestore references
+         const auth = firebase.auth();
+         const db = firebase.database();
+
+      </script>
+      <script src="scripts/login.js" charset="utf-8"></script>
+  </body>
+</html>

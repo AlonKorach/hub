@@ -93,9 +93,15 @@ function delItem(item) {
 function doAdd(req, res) {
   let saveTo;
   req.busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
+    if (!imgValidition(filename)) {
+      if (!imgValidition(filename, 0)) return res.redirect("/editItem?item="+item['item']+"&catName="+item['cat']+"&error=err6");
+      if (!imgValidition(filename, 1)) return res.redirect("/editItem?item="+item['item']+"&catName="+item['cat']+"&error=err7");
+    }
     saveTo = path.join(__dirname, "/uploads/" + filename)
     file.pipe(fs.createWriteStream(saveTo));
-    saveTo = "http://10.0.0.16:3000/uploads/" + filename;
+    let domain = req.headers.host;
+    let protocol = req.protocol;
+    saveTo = `${protocol}://${domain}/uploads/${filename}`;
   });
 
   let item = {};
@@ -103,7 +109,7 @@ function doAdd(req, res) {
     // validtion
     item['img'] = saveTo;
     let validtion = formValidation(item)
-    if (validtion != "true") res.redirect(`/add?cat=${item['cat']}&error=${validtion}&item=${item['item']}`)
+    if (validtion != "true") return res.redirect(`/add?cat=${item['cat']}&error=${validtion}&item=${item['item']}`)
     FBKS.addDBRow(`items/${item['cat']}`, item['item'].trim(), {item: item['item'].trim(), img: saveTo, sd: item['sd'].trim(), limited: parseInt(item['limited'].toString().replace(/.{4}(?:0*([1-9]\d{1,9}|\w{10}))$/g, ""))});
     res.redirect("/");
   });
@@ -151,7 +157,6 @@ async function add(req, res) {
 }
 
 function formValidation(form) {
-    console.log(form)
     let error           = "";
     let item            = form['item'];
     let cat             = form['cat'];
@@ -198,13 +203,15 @@ function numberValidation(number, numb = null) {
   switch (numb) {
     case 0:
       if (number.length < 0) return error
+      if (number.length > 5) return error
     case 1:
       var exp = /^[0-9]+$/;
       if (!number.toString().match(exp)) return error
+      if (number.toString().includes(".")) return error
       break;
     default:
       var exp = /^[0-9]+$/;
-      if (number.lenth < 0 || !number.toString().match(exp)) return error
+      if (number.lenth < 0 || !number.toString().match(exp) || number.toString().match(".") || number.length > 5) return error
   }
   return true;
 }
@@ -224,13 +231,13 @@ function nameValidation(item, numb = null) {
             break;
         break;
         case 2:
-            var alphaExp = /^[a-zא-ת]+/i
+            var alphaExp = /^[a-zא-ת\s]+$/i
             if (!item.match(alphaExp)) {
                 return error
             }
             break;
         default:
-        var alphaExp = /^[a-zא-ת]+/i
+        var alphaExp = /^[a-zא-ת\s]+$/i
         if (item.length < 2) {
             return error
         } else if (!item.match(alphaExp)) {
@@ -266,41 +273,38 @@ function doAddCat(req, res) {
 function doEdit(req, res) {
   let saveTo;
   req.busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
-    if (filename != "") {
-      if (!imgValidition(filename)) {
-        if (!imgValidition(filename, 0)) res.redirect("/editItem?error=err6");
-        if (!imgValidition(filename, 1)) res.redirect("/editItem?error=err7");
-        file.resume();
-      }
-      saveTo = path.join(__dirname, "/uploads/" + filename)
-      file.pipe(fs.createWriteStream(saveTo));
-      let domain = req.headers.host;
-      let protocol = req.protocol;
-      saveTo = `${protocol}://${domain}/uploads/${filename}`;
-    }else {
-      file.resume();
+    if (filename == "") {
+        return file.resume();
     }
+    if (!imgValidition(filename)) {
+      if (!imgValidition(filename, 0)) return res.redirect("./editItem?item="+item['item']+"&catName="+item['cat']+"&error=err6");
+      if (!imgValidition(filename, 1)) return res.redirect("./editItem?item="+item['item']+"&catName="+item['cat']+"&error=err7");
+    }
+    saveTo = path.join(__dirname, "/uploads/" + filename)
+    file.pipe(fs.createWriteStream(saveTo));
+    let domain = req.headers.host;
+    let protocol = req.protocol;
+    saveTo = `${protocol}://${domain}/uploads/${filename}`;
   });
 
   let item = {};
   req.busboy.on('finish', function() {
     // validtion
     if (!nameValidation(item['item'])) {
-      if (!nameValidation(item['item'], 1)) res.redirect("/editItem?error=err1")
-      if (!nameValidation(item['item'], 0)) res.redirect("/editItem?error=err1")
-      if (!nameValidation(item['item'], 2)) res.redirect("/editItem?error=err2")
+      if (!nameValidation(item['item'], 1)) return res.redirect("/editItem?item="+item['item']+"&catName="+item['cat']+"&error=err1")
+      if (!nameValidation(item['item'], 0)) return res.redirect("/editItem?item="+item['item']+"&catName="+item['cat']+"&error=err1")
+      if (!nameValidation(item['item'], 2)) return res.redirect("/editItem?item="+item['item']+"&catName="+item['cat']+"&error=err2")
     }
     if (!numberValidation(parseInt(item['limited']))) {
-      if (!numberValidation(parseInt(item['limited']), 0)) res.redirect("/editItem?error=err4")
-      if (!numberValidation(parseInt(item['limited']), 1)) res.redirect("/editItem?error=err5")
+      if (!numberValidation(parseInt(item['limited']), 0)) return res.redirect("/editItem?item="+item['item']+"&catName="+item['cat']+"&error=err4")
+      if (!numberValidation(parseInt(item['limited']), 1)) return res.redirect("/editItem?item="+item['item']+"&catName="+item['cat']+"&error=err5")
     }
-    FBKS.addDBRow(`/items/${item['cat']}`, item['item'].trim(), {item: item['item'].trim(), img: saveTo, sd: item['sd'].trim(), limited: parseInt(item['limited'].toString().replace(/.{4}(?:0*([1-9]\d{1,9}|\w{10}))$/g, ""))});
+    if (!saveTo) saveTo = item['img'];
+    FBKS.addDBRow(`items/${item['cat']}`, item['item'].trim(), {item: item['item'].trim(), img: saveTo, sd: item['sd'].trim(), limited: parseInt(item['limited'].toString().replace(/.{4}(?:0*([1-9]\d{1,9}|\w{10}))$/g, "").trim())});
+    if (item['item'] != item['oldName'] || item['cat'] != item['oldCat'] ) FBKS.deleteDBItem(`/${item['oldCat']}/${item['oldName']}`);
     res.redirect("/");
   });
   req.busboy.on('field', function(fieldname, val, fieldnameTruncated, valTruncated, encoding, mimetype) {
-    if (fieldname == "img" && val == "") {
-      saveTo = val
-     }
     item[fieldname] = val;
   });
 

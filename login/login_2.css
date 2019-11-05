@@ -1,0 +1,162 @@
+
+.autocomplete{
+  position: relative;
+}
+.wrapper {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  top: 5%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.searchInput {
+  height: 30px;
+  width: 40%;
+  border-radius:50px;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+}
+.search-btn {
+  position: absolute;
+  left: 30%;
+  top:0%;
+  width: 30px;
+  height: 100%;
+  outline: none;
+  border-radius: 50px;
+  background-color: transparent;
+  border-color: transparent;
+
+}
+input[type=text] {
+  background-color: #f1f1f1;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 30%;
+    right: 30%;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+body, html {
+  height: 100%;
+  margin:0;
+}
+.bg{
+  background-image: url("BG_login.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+* {
+  font-family: arial;
+}
+.card {
+  max-width:390px;
+  max-height:400px;
+  width:390px;
+  height:400px;
+  background-color:white;
+  border-radius:20px;
+  position:absolute;
+
+  top:50%;
+  left:50%;
+  padding:15px;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  box-shadow: 5px 5px 20px;
+}
+.txt {
+ font-size:22px;
+ color:black;
+ text-align: center;
+ margin-top: 10px;
+ line-height: 28px;
+}
+.title {
+ font-weight: 550;
+ font-size: 36px;
+ color:#000000;
+ text-align: center;
+ line-height: 3px;
+}
+.orangetxt {
+  color: #ff9800;
+}
+.login-container {
+  text-align: center;
+}
+.txtbtn {
+  font-weight: 500;
+  font-size: 22px;
+  color:white;
+  text-align: center;
+}
+.user-login input[type="txtbox"]{
+  border-radius: 5px;
+  border-color: #CDCDCD;
+  background-color: #F7F7F7;
+  width: 300px;
+  height: 50px;
+    font-size: 22px;
+  text-align: right;
+}
+.user-login input[type="password"]{
+  border-radius: 5px;
+  border-color: #CDCDCD;
+  background-color: #F7F7F7;
+  width: 300px;
+  height: 50px;
+    font-size: 22px;
+  text-align: right;
+}
+.user-login button[type="submit"]{
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  background-color: #ff9800;
+  text-align: center;
+  margin-top: 10px;
+}
+.user-login button[type="submit"]:hover {
+    background: #ff9800;
+    background: -moz-linear-gradient(top,  rgb(118, 131, 150) 0%, rgba(216,225,231,1) 0%, rgba(181,198,208,1) 0%, rgba(206,220,229,1) 100%);
+    background: -webkit-linear-gradient(top,  rgb(118, 131, 150) 0%,rgba(216,225,231,1) 0%,rgba(181,198,208,1) 0%,rgba(206,220,229,1) 100%);
+    background: linear-gradient(to bottom,  rgb(118, 131, 150) 0%,rgba(216,225,231,1) 0%,rgba(181,198,208,1) 0%,rgba(206,220,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dee1e2', endColorstr='#cedce5',GradientType=0 );
+}
+
+.user-login button[type="submit"]:active {
+    color: rgb(66, 134, 244);
+    background: rgb(83, 143, 239);
+    background: -moz-linear-gradient(top,  rgb(83, 143, 239) 0%, rgb(66, 134, 244) 100%);
+    background: -webkit-linear-gradient(top,  rgb(83, 143, 239) 0%,rgb(66, 134, 244) 100%);
+    background: linear-gradient(to bottom,  rgb(83, 143, 239) 0%,rgb(66, 134, 244) 100%); );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 );
+}

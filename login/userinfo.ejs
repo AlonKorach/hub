@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" id="" method="post">
+      
+    </form>
+    <ul id="userinfo">
+
+    </ul>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-functions.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDCQ7O-4EUfyPI_iX9zHa9LSZ4UDPXNwLk",
+        authDomain: "hubks-b0507.firebaseapp.com",
+        databaseURL: "https://hubks-b0507.firebaseio.com",
+        projectId: "hubks-b0507",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // make auth and firestore references
+      const auth = firebase.auth();
+      const db = firebase.database();
+      const functions = firebase.functions();
+    </script>
+    <script src="scripts/userinfo.js" charset="utf-8"></script>
+  </body>
+</html>
